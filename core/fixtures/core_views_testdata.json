@@ -1,0 +1,63 @@
+[
+    {
+        "pk": 1, 
+        "model": "core.course", 
+        "fields": {
+            "department": "M", 
+            "semester": "F", 
+            "number": 215, 
+            "name": "Linear Algebra", 
+            "year": 1995
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.lecture", 
+        "fields": {
+            "course": 1, 
+            "number": 1, 
+            "title": "Vectors in 2- and 3-space"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.lecture", 
+        "fields": {
+            "course": 1, 
+            "number": 2, 
+            "title": "Dot Products and Projects"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.lecture", 
+        "fields": {
+            "course": 1, 
+            "number": 3, 
+            "title": "Lines and Planes in 3-space"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.book", 
+        "fields": {
+            "edition": "", 
+            "author": "Howard Anton", 
+            "title": "Elementary Linear Algebra"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.question", 
+        "fields": {
+            "category": "D", 
+            "index": "", 
+            "section": "3.1", 
+            "question": "Define when two vectors are equivalent.", 
+            "points": 1, 
+            "answer": "When they have the same length and same direction, even if the initial andterminal points are not the same.\r\n", 
+            "lecture": 1, 
+            "book": 1
+        }
+    }
+]

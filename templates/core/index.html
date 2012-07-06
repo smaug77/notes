@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<title>Notes Core Information</title>
+</head>
+<body>
+<h1>Content</h1>
+{% if test_list %}
+<div data-role="collapsible">
+  <h3>Tests</h3>
+  <ul>
+    {% for test in test_list %}
+    <li><a href="/core/test_view/{{ test.id }}/">{{ test.full_name}}</a></li>
+    {% endfor %}
+</div>
+{% else %}
+<p>No tests</p>
+{% endif %}
+
+
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Fri Jul  6 09:06:56 EDT 2012 <!-- hhmts end -->
+</body> </html>

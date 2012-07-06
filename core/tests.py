@@ -5,12 +5,86 @@ when you run "manage.py test".
 Replace this with more appropriate tests for your application.
 """
 
-from django.test import TestCase
+import django.test as d_test
+import core.models
 
+class CoreViewsIndexTest(d_test.TestCase):
+    fixtures = ['core_views_testdata.json']
+    
+    def test_basic(self):
+        resp = self.client.get('/core/')
+        self.assertEqual(resp.status_code, 200)
+        self.assertTrue('test_list' in resp.context)
+        self.assertEqual([course.pk for course in
+                         resp.context['test_list']], [1])
+        course_1 = resp.context['test_list'][0]
+        self.assertEqual(course_1.name, 'Linear Algebra')
+        self.assertEqual(course_1.semester, 'F')
+        self.assertEqual(course_1.year, 1995)
+        self.assertEqual(course_1.department, 'M')
+        self.assertEqual(course_1.number, 215)
+        
+class CoreViewsTestViewTest(d_test.TestCase):
+    fixtures = ['core_views_testdata.json']
+    
+    def test_basic(self):
+        resp = self.client.get('/core/test_view/1/')
+        self.assertEqual(resp.status_code, 200)
+        self.assertTrue('course' in resp.context)
+        course_1 = resp.context['course']
+        self.assertEqual(course_1.name, 'Linear Algebra')
+        self.assertEqual(course_1.semester, 'F')
+        self.assertEqual(course_1.year, 1995)
+        self.assertEqual(course_1.department, 'M')
+        self.assertEqual(course_1.number, 215)
 
-class SimpleTest(TestCase):
-    def test_basic_addition(self):
-        """
-        Tests that 1 + 1 always equals 2.
-        """
-        self.assertEqual(1 + 1, 2)
+    def test_failure(self):
+        resp = self.client.get('/core/test_view/2/')
+        self.assertEqual(resp.status_code, 404)
+        
+class CoreViewsBookListTest(d_test.TestCase):
+    fixtures = ['core_views_testdata.json']
+    
+    def test_basic(self):
+        resp = self.client.get('/core/books/')
+        self.assertEqual(resp.status_code, 200)
+        self.assertTrue('book_list' in resp.context)
+        self.assertEqual([book.pk for book in
+                         resp.context['book_list']], [1])
+        book_1 = resp.context['book_list'][0]
+        self.assertEqual(book_1.title, u'Elementary Linear Algebra')        
+        self.assertEqual(book_1.author, 'Howard Anton')
+        self.assertEqual(book_1.edition, '')
+        
+class CoreViewsBookTest(d_test.TestCase):
+    fixtures = ['core_views_testdata.json']
+    
+    def test_basic(self):
+        resp = self.client.get('/core/book/1/')
+        self.assertEqual(resp.status_code, 200)
+        self.assertTrue('book' in resp.context)
+        book_1 = resp.context['book']
+        self.assertEqual(book_1.title, u'Elementary Linear Algebra')        
+        self.assertEqual(book_1.author, 'Howard Anton')
+        self.assertEqual(book_1.edition, '')
+
+    def test_failure(self):
+        resp = self.client.get('/core/book/2/')
+        self.assertEqual(resp.status_code, 404)
+    
+class CoreViewsCourseTest(d_test.TestCase):
+    fixtures = ['core_views_testdata.json']
+    
+    def test_basic(self):
+        resp = self.client.get('/core/course/1/')
+        self.assertEqual(resp.status_code, 200)
+        course_1 = resp.context['course']
+        self.assertEqual(course_1.name, 'Linear Algebra')
+        self.assertEqual(course_1.semester, 'F')
+        self.assertEqual(course_1.year, 1995)
+        self.assertEqual(course_1.department, 'M')
+        self.assertEqual(course_1.number, 215)
+        
+    def test_failure(self):
+        resp = self.client.get('/core/course/3/')
+        self.assertEqual(resp.status_code, 404)

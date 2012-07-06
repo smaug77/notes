@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<title>{{ book }}</title>
+</head>
+<body>
+<h1>{{ book }}</h1>
+<p>Author is {{ book.author }}</p>
+{% if book.edition %}
+<p>{{ book.edition }} Edition</p>
+{% endif %}
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Fri Jul  6 14:19:18 EDT 2012 <!-- hhmts end -->
+</body> </html>

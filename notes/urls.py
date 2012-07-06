@@ -5,13 +5,11 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'notes.views.home', name='home'),
-    # url(r'^notes/', include('notes.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
+    url(r'^core/$', 'core.views.index'),
+    url(r'^core/test_view/(?P<course_id>\d+)/$',
+        'core.views.test_view'),
+    url(r'^core/books/$', 'core.views.book_list'),
+    url(r'^core/book/(?P<book_id>\d+)/$', 'core.views.book'),
+    url(r'^core/course/(?P<course_id>\d+)/$', 'core.views.course'),
     url(r'^admin/', include(admin.site.urls)),
 )

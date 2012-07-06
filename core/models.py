@@ -1,5 +1,8 @@
 from django.db import models
 
+# strangely, django seems to suggest having unit tests here.
+from django.utils import unittest
+
 class Course(models.Model):
     """A course
 
@@ -43,10 +46,24 @@ class Course(models.Model):
     number = models.PositiveIntegerField()
 
     def full_name(self):
-        raise NotImplemented()
+        return "%s %d: %s" % (self.get_department_display(),
+                              self.number, self.name)
 
     def __unicode__(self):
-        return self.name
+        return self.full_name()
+
+class CourseTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.course1 = Course.objects.create(name="Linear Algebra",
+                                            semester="F", year=1995,
+                                            department="M",
+                                            number=215)
+        
+    def test_full_name(self):
+        self.assertEqual(self.course1.full_name(), u"Math 215: Linear" +
+                         u" Algebra")
+        
 
 class Lecture(models.Model):
     """A Lecture
