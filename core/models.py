@@ -124,5 +124,8 @@ class Question(models.Model):
     answer = models.TextField()
     lecture = models.ForeignKey(Lecture)
     book = models.ForeignKey(Book, blank=True)
-    section = models.CharField(max_length=10)
-    index = models.CharField(max_length=20)
+    section = models.CharField(max_length=10, blank=True)
+    index = models.CharField(max_length=20, blank=True)
+
+    def __unicode__(self):
+        return "%s %s" % (str(self.lecture), str(self.category))
