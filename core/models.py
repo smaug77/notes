@@ -45,6 +45,8 @@ class Course(models.Model):
     def full_name(self):
         raise NotImplemented()
 
+    def __unicode__(self):
+        return self.name
 
 class Lecture(models.Model):
     """A Lecture
@@ -61,6 +63,9 @@ class Lecture(models.Model):
     course = models.ForeignKey(Course)
     title = models.CharField(max_length=100)
 
+    def __unicode__(self):
+        return "%s %s" % (str(self.course), str(self.number))
+
 class Book(models.Model):
     """A book
 
@@ -75,6 +80,9 @@ class Book(models.Model):
     title = models.CharField(max_length=100)
     author = models.CharField(max_length=100)
     edition = models.CharField(max_length=3, blank=True)
+
+    def __unicode__(self):
+        return "%s by %s" % (self.title, self.author)
     
 
 class Question(models.Model):
