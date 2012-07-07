@@ -23,6 +23,13 @@ class CoreViewsIndexTest(d_test.TestCase):
         self.assertEqual(course_1.year, 1995)
         self.assertEqual(course_1.department, 'M')
         self.assertEqual(course_1.number, 215)
+        self.assertTrue('book_list' in resp.context)
+        self.assertEqual([book.pk for book in
+                         resp.context['book_list']], [1])
+        book_1 = resp.context['book_list'][0]
+        self.assertEqual(book_1.title, u'Elementary Linear Algebra')
+        self.assertEqual(book_1.author, 'Howard Anton')
+        self.assertEqual(book_1.edition, '') 
         
 class CoreViewsTestViewTest(d_test.TestCase):
     fixtures = ['core_views_testdata.json']

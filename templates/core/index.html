@@ -23,8 +23,20 @@
 <p>No tests</p>
 {% endif %}
 
+{% if book_list %}
+<div data-role="collapsible">
+  <h3>Books</h3>
+  <ul>
+    {% for book in book_list %}
+    <li><a href="/core/book/{{ book.id }}/">{{ book.full_name}}</a></li>
+    {% endfor %}
+</div>
+{% else %}
+<p>No books</p>
+{% endif %}
+
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Fri Jul  6 09:06:56 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Sat Jul  7 16:52:42 EDT 2012 <!-- hhmts end -->
 </body> </html>
