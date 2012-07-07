@@ -27,7 +27,26 @@ class CoreViewsIndexTest(d_test.TestCase):
 class CoreViewsTestViewTest(d_test.TestCase):
     fixtures = ['core_views_testdata.json']
     
-    def test_basic(self):
+    def test_basic_question(self):
+        resp = self.client.get('/core/test_view/1/')
+        self.assertEqual(resp.status_code, 200)
+        self.assertTrue('questions' in resp.context)
+        self.assertEqual([question.pk for question in
+                         resp.context['questions']], [1])
+        question_1 = resp.context['questions'][0]
+        self.assertEqual(question_1.points, 1)
+        self.assertEqual(question_1.category, 'D')
+        self.assertEqual(question_1.question, u'Define when two vectors '\
+                         'are equivalent.')
+        self.assertEqual(question_1.answer, u'When they have the '\
+                         'same length and same direction, even if '\
+                         'the initial andterminal points are not the '\
+                         'same.\r\n')
+        self.assertEqual(question_1.section.pk, 1)
+        self.assertEqual(question_1.book.pk, 1)
+        self.assertEqual(question_1.book_section, '3.1')
+        
+    def test_basic_course(self):
         resp = self.client.get('/core/test_view/1/')
         self.assertEqual(resp.status_code, 200)
         self.assertTrue('course' in resp.context)

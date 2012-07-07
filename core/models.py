@@ -65,8 +65,18 @@ class CourseTestCase(unittest.TestCase):
                          u" Algebra")
         
 
-class Lecture(models.Model):
-    """A Lecture
+class Section(models.Model):
+    """A section of a course. This could a lecture, week, etc. The
+       type will determine the length of the review. Each section gets
+       about 20 minutes. So:
+
+       ========= =============================
+       Type      Total Review Time
+       ========= =============================
+       Lecture   800 minutes or 2 weeks review
+       Week      360 minutes or 1 week review
+       Unit      120 minutes or 1/3 week review
+       ========= =============================
 
        instance variables
        ------------------
@@ -74,12 +84,20 @@ class Lecture(models.Model):
        * number
        * course - reference to a course
        * title  - string
+       * type   - Lecture
     """
+
+    TYPES = (
+        ('L', 'Lecture'),
+        ('W', 'Week'),
+        ('U', 'Unit')
+        )
 
     number = models.PositiveIntegerField()
     course = models.ForeignKey(Course)
     title = models.CharField(max_length=100)
-
+    category = models.CharField(max_length=2, choices=TYPES)
+    
     def __unicode__(self):
         return "%s %s" % (str(self.course), str(self.number))
 
@@ -116,8 +134,8 @@ class Question(models.Model):
        * category    - is this testing statements, examples, proofs, etc.
        * question    - (LaTeX) string
        * answer      - (LaTex) string
-       * lecture     - reference to the lecture in a course. (and a
-                       lecture references a course, of course).
+       * section     - reference to the section in a course. (and a
+                       section references a course, of course).
        * book        - reference to a Book that this came from. This may
                        be None.
        * section     - string which is the section in the book. This
@@ -139,10 +157,10 @@ class Question(models.Model):
     category = models.CharField(max_length=2, choices=TYPES)
     question = models.TextField()
     answer = models.TextField()
-    lecture = models.ForeignKey(Lecture)
+    section = models.ForeignKey(Section)
     book = models.ForeignKey(Book, blank=True)
-    section = models.CharField(max_length=10, blank=True)
+    book_section = models.CharField(max_length=10, blank=True)
     index = models.CharField(max_length=20, blank=True)
 
     def __unicode__(self):
-        return "%s %s" % (str(self.lecture), str(self.category))
+        return "%s %s" % (str(self.section), self.get_category_display())
