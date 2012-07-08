@@ -5,11 +5,13 @@
     
 
 """
-
-
 import django.shortcuts
 import django.http
 import core.models
+import logging
+
+logger = logging.getLogger('django.request')
+
 def index(request):
     test_list = core.models.Course.objects.all()
     book_list = core.models.Book.objects.all()
@@ -54,5 +56,28 @@ def course(request, course_id):
     c = django.shortcuts.get_object_or_404(core.models.Course,
                                            pk=course_id)
     return django.shortcuts.render_to_response('core/course.html',
-                                               {'course': c})
+                                               {'course': c},
+                                               context_instance=django.template.RequestContext(request)
+        )
+
+def new_concept(request, section_id):
+    s = django.shortcuts.get_object_or_404(core.models.Section,
+                                           pk=section_id)
+    try:
+        new_texts = request.POST.getlist('concept')
+    except KeyError:
+        c = s.course
+        return django.shortcuts.render_to_response('core/course.html',
+                                                   {'course': c},
+                                                   context_instance=django.template.RequestContext(request)
+            )
+    else:
+        for new_text in new_texts:
+            if new_text != '':
+                nc = core.models.Concept(name=new_text,section=s)
+                nc.save()
+        return django.http.HttpResponseRedirect(
+            django.core.urlresolvers.reverse('core.views.course',
+                                             args=(s.course.pk,)))
+    
 

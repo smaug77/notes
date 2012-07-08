@@ -118,7 +118,19 @@ class Book(models.Model):
 
     def __unicode__(self):
         return "%s by %s" % (self.title, self.author)
-    
+
+class Concept(models.Model):
+    """A concept in a class
+
+       instance variables
+       ------------------
+
+       * name - string
+       * section       
+    """
+
+    name = models.CharField(max_length=100)
+    section = models.ForeignKey(Section)
 
 class Question(models.Model):
     """A question and answer.

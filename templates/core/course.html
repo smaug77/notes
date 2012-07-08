@@ -11,11 +11,23 @@
 </head>
 
 <body>
-<h1></h1>
+<h1>Syllabus</h1>
 
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{% for section in course.section_set.all %}
+<h3>{{ section.title }}</h3>
+<form action="/core/{{ section.pk }}/new_concepts/" method="post">
+{% csrf_token %}
+  {% for x in 123456789|make_list %}
+    <b>Concept {{ x }}</b>: <input type="text" name="concept" id={{ x }} value="" />
+  {% endfor %}
+<input type="submit" value="Submit" />
+</form>
+{% endfor %}
 
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Fri Jul  6 14:23:04 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Sun Jul  8 07:01:12 EDT 2012 <!-- hhmts end -->
 </body> </html>

@@ -1,8 +1,13 @@
 import core.models
 import django.contrib
 
-django.contrib.admin.site.register(core.models.Book)
+class ConceptAdmin(django.contrib.admin.ModelAdmin):
+    list_display = ('name', 'section')
+    list_filter = ('name', 'section')
+    
+django.contrib.admin.site.register(core.models.Concept, ConceptAdmin)
 
+django.contrib.admin.site.register(core.models.Book)
 
 class SectionInline(django.contrib.admin.TabularInline):
     model=core.models.Section
