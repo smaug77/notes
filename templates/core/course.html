@@ -15,19 +15,24 @@
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-{% for section in course.section_set.all %}
-<h3>{{ section.title }}</h3>
-<form action="/core/{{ section.pk }}/new_concepts/" method="post">
+
+<form action="/core/new_concepts/" method="post">
 {% csrf_token %}
+<select name="section">
+  {% for section in course.section_set.all %}
+    <option value="{{ section.pk }}">{{ forloop.counter }}. {{ section.title }}</option>
+  {% endfor %}
+  <h3>Add the following Concepts</h3>   
   {% for x in 123456789|make_list %}
-    <b>Concept {{ x }}</b>: <input type="text" name="concept" id={{ x }} value="" />
+    <label for="concept" id={{ x }}><b>Concept {{ x }}</b>: </label>
+    <input type="text" name="concept" id={{ x }} value="" />
   {% endfor %}
 <input type="submit" value="Submit" />
 </form>
-{% endfor %}
+
 
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Sun Jul  8 07:01:12 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Sun Jul  8 11:15:47 EDT 2012 <!-- hhmts end -->
 </body> </html>

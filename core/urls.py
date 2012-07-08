@@ -7,5 +7,5 @@ urlpatterns = patterns('core.views',
     url(r'^books/$', 'book_list'),
     url(r'^book/(?P<book_id>\d+)/$', 'book'),
     url(r'^course/(?P<course_id>\d+)/$', 'course'),
-    url(r'^(?P<section_id>\d+)/new_concepts/$', 'new_concept'),
+    url(r'^new_concepts/$', 'new_concept'),
 )

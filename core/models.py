@@ -99,7 +99,7 @@ class Section(models.Model):
     category = models.CharField(max_length=2, choices=TYPES)
     
     def __unicode__(self):
-        return "%s %s" % (str(self.course), str(self.number))
+        return "%s %s: %s" % (str(self.course), str(self.number), str(self.title))
 
 class Book(models.Model):
     """A book

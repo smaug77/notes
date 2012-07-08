@@ -60,11 +60,12 @@ def course(request, course_id):
                                                context_instance=django.template.RequestContext(request)
         )
 
-def new_concept(request, section_id):
-    s = django.shortcuts.get_object_or_404(core.models.Section,
-                                           pk=section_id)
+def new_concept(request):
     try:
         new_texts = request.POST.getlist('concept')
+        section_id = request.POST['section']
+        s = django.shortcuts.get_object_or_404(core.models.Section,
+                                           pk=section_id)
     except KeyError:
         c = s.course
         return django.shortcuts.render_to_response('core/course.html',
