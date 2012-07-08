@@ -1,0 +1,1318 @@
+[
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "book", 
+            "name": "book", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "concept", 
+            "name": "concept", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "course", 
+            "name": "course", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "question", 
+            "name": "question", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "section", 
+            "name": "section", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": "b4342ac12f71235ea421e5b438e7df1f", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-07-21T20:43:26.377Z", 
+            "session_data": "OWI5MzUyMTEyMjBjMTU2Y2RjODA3NTJiZjU1NjU3ZjcwMTFlNjhiNjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "684659bbca01dfb26ecdcffd9b9b6c45", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-07-22T13:21:41.992Z", 
+            "session_data": "OWI5MzUyMTEyMjBjMTU2Y2RjODA3NTJiZjU1NjU3ZjcwMTFlNjhiNjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "example.com", 
+            "name": "example.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.course", 
+        "fields": {
+            "department": "M", 
+            "semester": "F", 
+            "number": 215, 
+            "name": "Linear Algebra", 
+            "year": 1995
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.course", 
+        "fields": {
+            "department": "C", 
+            "semester": "U", 
+            "number": 1, 
+            "name": "Learning Perl", 
+            "year": 1996
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 1, 
+            "title": "Vectors in 2- and 3-space"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 2, 
+            "title": "Dot Products and Projections"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 3, 
+            "title": "Lines and Planes in 3-space"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 4, 
+            "title": "Systems of Linear Equations"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 5, 
+            "title": "Matrices"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 6, 
+            "title": "Inverses"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 7, 
+            "title": "Elementary Matrices and Row Opeartions"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 8, 
+            "title": "Main Theorem on Invertibility"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 9, 
+            "title": "Diagonal, Triangular and Symmetric Matrices"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 10, 
+            "title": "The Determinant Function"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 11, 
+            "title": "Evaluating Determinants"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 12, 
+            "title": "Properties of Determinants"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 13, 
+            "title": "Cofactor Expansion and Cramer's Rule"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 14, 
+            "title": "Cross Product"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 15, 
+            "title": "Euclidean $n$-space"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 16, 
+            "title": "Linear Transformations of Euclidean $n$-space"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 17, 
+            "title": "Properties of Linear Transformations"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 18, 
+            "title": "Real Vector Spaces"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 19, 
+            "title": "Subspaces"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 20, 
+            "title": "Linear Independence"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 21, 
+            "title": "Basis and Dimension"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 22, 
+            "title": "Row Space, Column Space and Nullspace"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 23, 
+            "title": "Rank and Nullity"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 24, 
+            "title": "Inner Product Spaces"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 25, 
+            "title": "Orthogonality"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 26, 
+            "title": "Orthonormal Bases"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 27, 
+            "title": "Best Approximation and Least Squares"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 28, 
+            "title": "Orthogonal Matrices and Change of Basis"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 29, 
+            "title": "Eigenvalues and Eigenvectors"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 30, 
+            "title": "Diagonalization"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 31, 
+            "title": "Orthogonal Diagonalization"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 32, 
+            "title": "Approximation and Fourier Series"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 33, 
+            "title": "General Linear Transformations"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 34, 
+            "title": "Kernel and Range"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 35, 
+            "title": "Inverse Linear Transformations"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 36, 
+            "title": "Matrices of General Linear Transformations"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 37, 
+            "title": "Similarity"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 38, 
+            "title": "Quadratic Forms"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 39, 
+            "title": "Diagonalizing Quadratic Forms; Conic Sections"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "core.section", 
+        "fields": {
+            "category": "L", 
+            "course": 1, 
+            "number": 40, 
+            "title": "Quadric Surfaces"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.book", 
+        "fields": {
+            "edition": "", 
+            "author": "Howard Anton", 
+            "title": "Elementary Linear Algebra"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "Geometric Vectors"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "Geometry of Vector Arithmetic"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "Vectors in Coordinate Systems"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "Translation of Axes"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "8 properties of vectors in 2- or 3-space"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "Norm of a vector"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "Unit Vectors"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 1, 
+            "name": "Distance between vectors"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 3, 
+            "name": "Planes in 3-space"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 3, 
+            "name": "General form of equation of a plane in 3-space"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 3, 
+            "name": "Vector Form of the equation of a plane"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 3, 
+            "name": "Parametric equations for lines in 3-space"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 3, 
+            "name": "Vector form of the equation of a line"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 3, 
+            "name": "Distance between a point and a plane."
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 3, 
+            "name": "Distance between 2 parallel planes"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 2, 
+            "name": "Dot Product of Vectors"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 2, 
+            "name": "Component formula for the dot product of vectors"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 2, 
+            "name": "Finding the angle between vectors"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 2, 
+            "name": "Orthogonal vectors"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 2, 
+            "name": "4 properties of dot products of vectors in 2- and 3-space"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 2, 
+            "name": "orthogonal projections"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "core.concept", 
+        "fields": {
+            "section": 2, 
+            "name": "complement of orthogonal projection"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.question", 
+        "fields": {
+            "category": "D", 
+            "index": "", 
+            "book_section": "3.1", 
+            "section": 1, 
+            "question": "Define when two vectors are equivalent.", 
+            "points": 1, 
+            "answer": "When they have the same length and same direction, even if the initial andterminal points are not the same.\r\n", 
+            "book": 1
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_book", 
+            "name": "Can add book", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_book", 
+            "name": "Can change book", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_book", 
+            "name": "Can delete book", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_concept", 
+            "name": "Can add concept", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_concept", 
+            "name": "Can change concept", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_concept", 
+            "name": "Can delete concept", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_course", 
+            "name": "Can add course", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_course", 
+            "name": "Can change course", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_course", 
+            "name": "Can delete course", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_question", 
+            "name": "Can add question", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_question", 
+            "name": "Can change question", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_question", 
+            "name": "Can delete question", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_section", 
+            "name": "Can add section", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_section", 
+            "name": "Can change section", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_section", 
+            "name": "Can delete section", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "smaug", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-07-08T13:21:41.985Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$Jov7fYaMLN8Q$Kv4tXGVzO3CkErqafBOd6ss0hNnGBS0aDiQM8paoheA=", 
+            "email": "ror.app.user@gmail.com", 
+            "date_joined": "2012-07-07T20:42:30.095Z"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-07-08T13:30:10.464Z", 
+            "object_repr": "Math 215: Linear Algebra", 
+            "object_id": "1", 
+            "change_message": "Added section \"Math 215: Linear Algebra 4\". Added section \"Math 215: Linear Algebra 5\". Added section \"Math 215: Linear Algebra 6\". Added section \"Math 215: Linear Algebra 7\". Added section \"Math 215: Linear Algebra 8\". Added section \"Math 215: Linear Algebra 9\". Added section \"Math 215: Linear Algebra 10\". Added section \"Math 215: Linear Algebra 11\". Added section \"Math 215: Linear Algebra 12\". Added section \"Math 215: Linear Algebra 13\". Added section \"Math 215: Linear Algebra 14\". Added section \"Math 215: Linear Algebra 15\". Added section \"Math 215: Linear Algebra 16\". Added section \"Math 215: Linear Algebra 17\". Added section \"Math 215: Linear Algebra 18\". Added section \"Math 215: Linear Algebra 19\". Added section \"Math 215: Linear Algebra 20\". Added section \"Math 215: Linear Algebra 21\". Added section \"Math 215: Linear Algebra 22\". Added section \"Math 215: Linear Algebra 23\". Added section \"Math 215: Linear Algebra 24\". Added section \"Math 215: Linear Algebra 25\". Added section \"Math 215: Linear Algebra 26\". Added section \"Math 215: Linear Algebra 27\". Added section \"Math 215: Linear Algebra 28\". Added section \"Math 215: Linear Algebra 29\". Added section \"Math 215: Linear Algebra 30\". Added section \"Math 215: Linear Algebra 31\". Added section \"Math 215: Linear Algebra 32\". Added section \"Math 215: Linear Algebra 33\". Added section \"Math 215: Linear Algebra 34\". Added section \"Math 215: Linear Algebra 35\". Added section \"Math 215: Linear Algebra 36\". Added section \"Math 215: Linear Algebra 37\". Added section \"Math 215: Linear Algebra 38\". Added section \"Math 215: Linear Algebra 39\". Added section \"Math 215: Linear Algebra 40\". Changed title for section \"Math 215: Linear Algebra 2\".", 
+            "user": 1, 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T13:21:55.244Z", 
+            "object_repr": "Concept object", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T13:21:55.193Z", 
+            "object_repr": "Concept object", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.558Z", 
+            "object_repr": "Concept object", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.554Z", 
+            "object_repr": "Concept object", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.548Z", 
+            "object_repr": "Concept object", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.544Z", 
+            "object_repr": "Concept object", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.539Z", 
+            "object_repr": "Concept object", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.534Z", 
+            "object_repr": "Concept object", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.529Z", 
+            "object_repr": "Concept object", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.524Z", 
+            "object_repr": "Concept object", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.520Z", 
+            "object_repr": "Concept object", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.515Z", 
+            "object_repr": "Concept object", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T11:01:01.405Z", 
+            "object_repr": "Concept object", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-07-08T10:39:46.278Z", 
+            "object_repr": "Concept object", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-07-07T21:33:18.139Z", 
+            "object_repr": "Computer Science 1: Learning Perl", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-07-07T21:08:18.525Z", 
+            "object_repr": "Math 215: Linear Algebra", 
+            "object_id": "1", 
+            "change_message": "Changed category for section \"Math 215: Linear Algebra 1\". Changed category for section \"Math 215: Linear Algebra 2\". Changed category for section \"Math 215: Linear Algebra 3\".", 
+            "user": 1, 
+            "content_type": 7
+        }
+    }
+]
