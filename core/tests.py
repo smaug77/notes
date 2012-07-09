@@ -114,3 +114,30 @@ class CoreViewsCourseTest(d_test.TestCase):
     def test_failure(self):
         resp = self.client.get('/core/course/3/')
         self.assertEqual(resp.status_code, 404)
+
+class CoreNewConceptTest(d_test.TestCase):
+    fixtures = ['core_views_testdata.json']
+
+    def test_good_concept(self):
+        section_1 = core.models.Section.objects.get(pk=1)
+        resp = self.client.post('/core/new_concepts/', {'concept':
+        ['Definition of something', 'Theorem on something else'],
+        'section': 1})
+        self.assertEqual(resp.status_code, 302)
+        self.assertEqual(resp['Location'], 'http://testserver/core/course/1/')
+        self.assertEqual(section_1.concept_set.get(pk=1).name,
+                         "Definition of something")
+        self.assertEqual(section_1.concept_set.get(pk=1).section,
+                         section_1)
+        self.assertEqual(section_1.concept_set.get(pk=2).name,
+                         "Theorem on something else")
+        self.assertEqual(section_1.concept_set.get(pk=2).section,
+                         section_1)
+
+    def test_no_post_data(self):
+        resp = self.client.post('core/new_concepts')
+        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.context['error_message'],
+                         "No Concepts Entered")
+        
+        

@@ -22,17 +22,18 @@
   {% for section in course.section_set.all %}
     <option value="{{ section.pk }}">{{ forloop.counter }}. {{ section.title }}</option>
   {% endfor %}
+  </select>
   <h3>Add the following Concepts</h3>   
   {% for x in 123456789|make_list %}
-    <label for="concept" id={{ x }}><b>Concept {{ x }}</b>: </label>
-    <input type="text" name="concept" id={{ x }} value="" />
+  <label for="concept" id={{ x }}><b>Concept {{ x }}</b>: </label>
+  <input type="text" name="concept" id={{ x }} value="" />
   {% endfor %}
-<input type="submit" value="Submit" />
+  <input type="submit" value="Submit" />
 </form>
-
+  
 
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Sun Jul  8 11:15:47 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Sun Jul  8 18:56:26 EDT 2012 <!-- hhmts end -->
 </body> </html>

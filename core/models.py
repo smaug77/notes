@@ -3,32 +3,31 @@ from django.db import models
 # strangely, django seems to suggest having unit tests here.
 from django.utils import unittest
 
+
 class Course(models.Model):
     """A course
 
        instance variables
        ------------------
-       
+
        * name - string
        * semester - either winter, spring, summer or fall
        * year
        * department - math, physics, etc.
-       * number       
-       
+       * number
+
        methods
        -------
 
        * full_name - returns a name including course number,
-                     department, etc.       
+                     department, etc.
 
     """
-    
-    SEMESTERS = (
-        ('W', 'Winter'),
-        ('P', 'Spring'),
-        ('U', 'Summer'),
-        ('F', 'Fall'),
-        )
+
+    SEMESTERS = (('W', 'Winter'),
+                 ('P', 'Spring'),
+                 ('U', 'Summer'),
+                 ('F', 'Fall'))
 
     DEPTS = (
         ('M', 'Math'),
@@ -36,8 +35,7 @@ class Course(models.Model):
         ('H', 'Philosophy'),
         ('E', 'Economics'),
         ('C', 'Computer Science'),
-        ('S', 'Sociology'),
-        )
+        ('S', 'Sociology'))
 
     name = models.CharField(max_length=100)
     semester = models.CharField(max_length=2, choices=SEMESTERS)
@@ -52,18 +50,23 @@ class Course(models.Model):
     def __unicode__(self):
         return self.full_name()
 
+
 class CourseTestCase(unittest.TestCase):
 
     def setUp(self):
         self.course1 = Course.objects.create(name="Linear Algebra",
-                                            semester="F", year=1995,
-                                            department="M",
-                                            number=215)
-        
+                                             semester="F", year=1995,
+                                             department="M",
+                                             number=215)
+
     def test_full_name(self):
         self.assertEqual(self.course1.full_name(), u"Math 215: Linear" +
                          u" Algebra")
-        
+
+    def test_unicode(self):
+        self.assertEqual(unicode(self.course1), u"Math 215: Linear" +
+                         u" Algebra")
+
 
 class Section(models.Model):
     """A section of a course. This could a lecture, week, etc. The
@@ -90,23 +93,42 @@ class Section(models.Model):
     TYPES = (
         ('L', 'Lecture'),
         ('W', 'Week'),
-        ('U', 'Unit')
-        )
+        ('U', 'Unit'))
 
     number = models.PositiveIntegerField()
     course = models.ForeignKey(Course)
     title = models.CharField(max_length=100)
     category = models.CharField(max_length=2, choices=TYPES)
-    
+
     def __unicode__(self):
-        return "%s %s: %s" % (str(self.course), str(self.number), str(self.title))
+        return "%s %s: %s" % (str(self.course), str(self.number),
+                              str(self.title))
+
+
+class SectionTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.course1 = Course.objects.create(name="Linear Algebra",
+                                             semester="F", year=1995,
+                                             department="M",
+                                             number=215)
+        self.section1 = Section.objects.create(number=1,
+                                               course=self.course1,
+                                               title='Linear' +
+                                               ' Algebra',
+                                               category='L')
+
+    def test_unicode(self):
+        self.assertEqual(unicode(self.section1),
+                         u"Math 215: Linear Algebra 1: Linear Algebra")
+
 
 class Book(models.Model):
     """A book
 
        instance variables
        ------------------
-       
+
        * title
        * author
        * edition - optional
@@ -119,6 +141,7 @@ class Book(models.Model):
     def __unicode__(self):
         return "%s by %s" % (self.title, self.author)
 
+
 class Concept(models.Model):
     """A concept in a class
 
@@ -126,11 +149,12 @@ class Concept(models.Model):
        ------------------
 
        * name - string
-       * section       
+       * section
     """
 
     name = models.CharField(max_length=100)
     section = models.ForeignKey(Section)
+
 
 class Question(models.Model):
     """A question and answer.
@@ -176,3 +200,31 @@ class Question(models.Model):
 
     def __unicode__(self):
         return "%s %s" % (str(self.section), self.get_category_display())
+
+
+class QuestionTestCase(unittest.TestCase):
+
+    def setUp(self):
+        self.course1 = Course.objects.create(name="Linear Algebra",
+                                             semester="F", year=1995,
+                                             department="M",
+                                             number=215)
+        self.section1 = Section.objects.create(number=1,
+                                               course=self.course1,
+                                               title='Linear' +
+                                               ' Algebra',
+                                               category='L')
+        self.book1 = Book.objects.create(title="Elementary", author="Anton")
+        self.question1 = Question.objects.create(points=1,
+                                                 category='D',
+                                                 question="What is X?",
+                                                 answer="Y!",
+                                                 section=self.section1,
+                                                 book=self.book1,
+                                                 book_section='',
+                                                 index='1.1',)
+
+    def test_unicode(self):
+        self.assertEqual(unicode(self.question1),
+                         u"Math 215: Linear Algebra 1:" +
+                         u"Linear Algebra Definition")

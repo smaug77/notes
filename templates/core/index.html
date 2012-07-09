@@ -35,8 +35,32 @@
 <p>No books</p>
 {% endif %}
 
+{% if test_list %}
+<div data-role="collapsible">
+  <h3>Add Concepts to Courses</h3>
+  <ul>
+    {% for course in test_list %}
+    <li><a href="/core/course/{{ course.id }}/">{{ course.full_name }}</a></li>
+    {% endfor %}
+</div>
+{% else %}
+<p>No courses</p>
+{% endif %}
+
+{% if test_list %}
+<div data-role="collapsible">
+  <h3>Add Questions to Courses</h3>
+  <ul>
+    {% for course in test_list %}
+    <li><a href="/core/questions/{{ course.id }}/">{{ course.full_name }}</a></li>
+    {% endfor %}
+</div>
+{% else %}
+<p>No courses</p>
+{% endif %}
+
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Sat Jul  7 17:01:15 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Sun Jul  8 18:12:29 EDT 2012 <!-- hhmts end -->
 </body> </html>

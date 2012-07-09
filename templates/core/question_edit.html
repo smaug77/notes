@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<title>{{ course.full_name }} Syllabus</title>
+</head>
+
+<body>
+<h1>Syllabus</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+<form action="/core/question/new/{{ course.pk }}/" method="post">
+{% csrf_token %}
+<h3>Add the following question</h3>
+<label for="question"><b>Question</b>: </label>
+<textarea cols="80" rows="30" name="question">
+Enter your question here</textarea>
+<label for="answer"><b>Answer</b>: </label>
+<textarea cols="80" rows="30" name="answer">Enter your answer here</textarea>
+<h3>Metadata about the question</h3>
+<table border="1">
+  <tr>
+    <td>
+      <label for="points"><b>Points:</b></label>
+      <input type="text" name="points" value="0" />
+    </td>
+    <td>
+      <label for="category"><b>Question type</b></label>
+      <select name="category">
+	<option value="C">Concept</option>
+	<option value="S">Statement</option>
+	<option value="D">Definition</option>
+	<option value="E">Example</option>
+	<option value="P">Proof</option>
+	<option value="X">Exercise</option>
+      </select>	
+    </td>
+    <td>
+      <label for="index"><b>Question name in book</b></label>
+      <input type="text" name="index" value="" />      
+    </td>
+  </tr>
+  <tr><td>
+    <div align="right"><br>
+    {% for concept in concepts %}
+    <input type="checkbox" name="concept" value={{ concept.pk }}> {{concept.name }} 
+    {% endfor %}
+    </td>
+    {% if book_list %}
+    <td>
+      <label for="book"><b>Book Source</b></label>
+      <select name="book">
+	{% for book in book_list %}
+	<option value="{{ book.pk }}">{{ book.title }}</option>
+	  {% endfor %}
+      </select>
+    </td>
+    {% endif %}
+    <td>
+      <label for="book_section"><b>Book Section</b></label>
+      <input type="text" name="book_section" value="" />      
+    </td>
+  </tr>
+</table>
+
+<input type="submit" value="Submit" />
+</form>
+
+
+
+<hr>
+<address></address>
+<!-- hhmts start -->Last modified: Sun Jul  8 20:26:57 EDT 2012 <!-- hhmts end -->
+</body> </html>

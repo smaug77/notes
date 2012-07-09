@@ -69,7 +69,9 @@ def new_concept(request):
     except KeyError:
         c = s.course
         return django.shortcuts.render_to_response('core/course.html',
-                                                   {'course': c},
+                                                   {'course': c,
+                                                    'error_message':
+                                                    "No Concepts Entered"},
                                                    context_instance=django.template.RequestContext(request)
             )
     else:
@@ -80,5 +82,19 @@ def new_concept(request):
         return django.http.HttpResponseRedirect(
             django.core.urlresolvers.reverse('core.views.course',
                                              args=(s.course.pk,)))
-    
 
+def question_edit(request, course_id, section_id):
+    c = django.shortcuts.get_object_or_404(core.models.Course,
+                                           pk=course_id)
+    s = django.shortcuts.get_object_or_404(core.models.Section,
+                                           pk=section_id)
+    book_list = core.models.Book.objects.all()   
+    cpts = s.concept_set.all()
+    return django.shortcuts.render_to_response('core/question_edit.html',
+                                               {'course': c,
+                                                'book_list': book_list,
+                                                'concepts': cpts},
+                                               context_instance=django.template.RequestContext(request))
+
+def new_question(request, course_id):
+    pass
