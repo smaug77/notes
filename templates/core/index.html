@@ -52,9 +52,17 @@
   <h3>Add Questions to Courses</h3>
   <ul>
     {% for course in test_list %}
-    <li><a href="/core/questions/{{ course.id }}/">{{ course.full_name }}</a></li>
+    <li>{{ course.full_name }}</li>
+   
+      <ul>
+      {% for section in course.section_set.all %}
+      <li><a href="/core/questions/{{ course.id }}/{{ section.id }}/">{{	course.full_name }}{{ section }} </a></li>
+      {% endfor %}
+      </ul>
+   
     {% endfor %}
-</div>
+</ul>
+      </div>
 {% else %}
 <p>No courses</p>
 {% endif %}
@@ -62,5 +70,5 @@
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Sun Jul  8 18:12:29 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Tue Jul 10 21:07:56 EDT 2012 <!-- hhmts end -->
 </body> </html>

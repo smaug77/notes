@@ -9,8 +9,10 @@ import django.shortcuts
 import django.http
 import core.models
 import logging
+from copy import deepcopy
 
-logger = logging.getLogger('django.request')
+#logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('notes')
 
 def index(request):
     test_list = core.models.Course.objects.all()
@@ -84,17 +86,79 @@ def new_concept(request):
                                              args=(s.course.pk,)))
 
 def question_edit(request, course_id, section_id):
+  try:  
     c = django.shortcuts.get_object_or_404(core.models.Course,
                                            pk=course_id)
     s = django.shortcuts.get_object_or_404(core.models.Section,
                                            pk=section_id)
     book_list = core.models.Book.objects.all()   
     cpts = s.concept_set.all()
+    points_used = sum([x.points for x in s.question_set.all()])
     return django.shortcuts.render_to_response('core/question_edit.html',
                                                {'course': c,
-                                                'book_list': book_list,
+                                                'section': s,
+                                                'book_list':book_list,
+                                                'points_used': points_used,
                                                 'concepts': cpts},
                                                context_instance=django.template.RequestContext(request))
+  except:
+    logger.exception("something went wrong")
+    
+def new_question(request, course_id, section_id):
+    logger.info("in new_question")
+    try:
+        logger.info("%s" % request.POST)
+        question_dict = {}
+        concepts = []
+        for k,v in request.POST.items():
+            if k == u'concept':
+                concepts = \
+                [django.shortcuts.get_object_or_404(core.models.Concept,
+                                                    pk=int(i)) for i
+                                                    in v]
+            elif k != u'csrfmiddlewaretoken':
+                question_dict[k] = v
+        #        question_dict = deepcopy(request.POST)
 
-def new_question(request, course_id):
-    pass
+        book_id = request.POST['book'][0]
+        if book_id != u'':
+            question_dict['book'] = django.shortcuts.get_object_or_404(core.models.Book,
+                                               pk=int(book_id))
+            logger.info("created %s of type %s" %
+                        (question_dict['book'],
+                         type(question_dict['book'])))
+            logger.info("%s" % question_dict)
+        else:
+            question_dict['book'] = None
+    except:
+        logger.exception("failed to create book instance for %s" % request.POST)
+        c = django.shortcuts.get_object_or_404(core.models.Course,
+                                               pk=course_id)
+        s = django.shortcuts.get_object_or_404(core.models.Section,
+                                               pk=section_id)
+        book_list = core.models.Book.objects.all()   
+        cpts = s.concept_set.all()
+        points_used = sum([x.points for x in s.question_set.all()])
+        return django.shortcuts.render_to_response('core/question_edit.html',
+                                                   {'course': c,
+                                                    'section': s,
+                                                    'book_list':book_list,
+                                                    'points_used': points_used,
+                                                    'concepts': cpts,                                                    
+                                                    'error_message':
+                                                    "No Book Selected"},
+            context_instance=django.template.RequestContext(request))
+
+    question_dict['section_id'] = section_id
+    try:
+        new_question = core.models.Question(**(question_dict))
+        new_question.save()
+        for x in concepts:
+            new_question.concepts.add(x)
+        new_question.save()
+    except:
+        logger.exception("Failed to create a new question:")
+
+    django.http.HttpResponseRedirect(
+            django.core.urlresolvers.reverse('core.views.question_edi',
+                                             args=(course_id, section_id,)))

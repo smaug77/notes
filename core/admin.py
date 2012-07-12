@@ -27,7 +27,7 @@ django.contrib.admin.site.register(core.models.Course, CourseAdmin)
 class QuestionAdmin(django.contrib.admin.ModelAdmin):
     fieldsets = [
         (None,       {'fields': ['question', 'answer']}),
-        ('Metadata', {'fields': ['points', 'category', 'section']}),
+        ('Metadata', {'fields': ['concepts', 'points', 'category', 'section']}),
         ('Resource', {'fields': ['book', 'book_section', 'index']})]
 
 django.contrib.admin.site.register(core.models.Question,

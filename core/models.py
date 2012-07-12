@@ -197,6 +197,7 @@ class Question(models.Model):
     book = models.ForeignKey(Book, blank=True)
     book_section = models.CharField(max_length=10, blank=True)
     index = models.CharField(max_length=20, blank=True)
+    concepts = models.ManyToManyField(Concept)
 
     def __unicode__(self):
         return "%s %s" % (str(self.section), self.get_category_display())
@@ -226,5 +227,5 @@ class QuestionTestCase(unittest.TestCase):
 
     def test_unicode(self):
         self.assertEqual(unicode(self.question1),
-                         u"Math 215: Linear Algebra 1:" +
+                         u"Math 215: Linear Algebra 1: " +
                          u"Linear Algebra Definition")
