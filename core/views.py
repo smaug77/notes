@@ -93,12 +93,18 @@ def question_edit(request, course_id, section_id):
                                            pk=section_id)
     book_list = core.models.Book.objects.all()   
     cpts = s.concept_set.all()
-    points_used = sum([x.points for x in s.question_set.all()])
+    print s
+    print s.question_set.all()
+    points_total = sum([x.points for x in s.question_set.all()])
+    points_exer = sum([x.points for x in s.question_set.all() if x.category=='X'])
+    points_other = sum([x.points for x in s.question_set.all() if x.category!='X'])
     return django.shortcuts.render_to_response('core/question_edit.html',
                                                {'course': c,
                                                 'section': s,
                                                 'book_list':book_list,
-                                                'points_used': points_used,
+                                                'points_total': points_total,
+                                                'points_exer': points_exer,
+                                                'points_other': points_other,
                                                 'concepts': cpts},
                                                context_instance=django.template.RequestContext(request))
   except:
