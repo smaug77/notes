@@ -14,7 +14,10 @@ MathJax.Hub.Config({
 <h3>{{ course.full_name }} Exam</h3>
 <p>This exam has {{ points }} points.</p>
 {% for question in questions %}
-{{ forloop.counter }}. [<b>{{ question.points }}</b>] {{ question.question }} <br>
+{{ forloop.counter }}. [<b>{{ question.points }}</b>]
+{% autoescape off %}
+{{ question.question }} <br>
+{% endautoescape %}
 {% endfor %}
 <body>
 <h1></h1>
@@ -23,5 +26,5 @@ MathJax.Hub.Config({
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Thu Jul 12 17:37:46 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Sun Jul 15 14:51:00 EDT 2012 <!-- hhmts end -->
 </body> </html>
