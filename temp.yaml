@@ -1,12 +1,12 @@
-- fields: {department: M, name: Linear Algebra, number: 215, semester: F, year: 1995}
-  model: core.course
-  pk: 1
 - fields: {department: C, name: Learning Perl, number: 1, semester: U, year: 1996}
   model: core.course
   pk: 2
 - fields: {department: M, name: Basic Algebra, number: 1, semester: F, year: 1993}
   model: core.course
   pk: 3
+- fields: {department: M, name: Linear Algebra, number: 215, semester: F, year: 1995}
+  model: core.course
+  pk: 1
 - fields: {category: L, course: 1, number: 1, title: Vectors in 2- and 3-space}
   model: core.section
   pk: 1
@@ -124,16 +124,6 @@
 - fields: {category: L, course: 1, number: 37, title: Similarity}
   model: core.section
   pk: 37
-- fields: {category: L, course: 1, number: 38, title: Quadratic Forms}
-  model: core.section
-  pk: 38
-- fields: {category: L, course: 1, number: 39, title: Diagonalizing Quadratic Forms;
-      Conic Sections}
-  model: core.section
-  pk: 39
-- fields: {category: L, course: 1, number: 40, title: Quadric Surfaces}
-  model: core.section
-  pk: 40
 - fields: {category: L, course: 3, number: 1, title: Number Properties}
   model: core.section
   pk: 41
@@ -192,6 +182,32 @@
 - fields: {category: L, course: 3, number: 18, title: Determinants}
   model: core.section
   pk: 59
+- fields: {category: L, course: 1, number: 38, title: Geometry of Linear Operators
+      in R^2}
+  model: core.section
+  pk: 38
+- fields: {category: L, course: 1, number: 39, title: Quadratic Forms}
+  model: core.section
+  pk: 39
+- fields: {category: L, course: 1, number: 40, title: Diagonalizing Quadratic Forms}
+  model: core.section
+  pk: 40
+- fields: {category: L, course: 1, number: 41, title: Quadratic Surfaces}
+  model: core.section
+  pk: 60
+- fields: {category: L, course: 1, number: 42, title: LU Decompositions}
+  model: core.section
+  pk: 61
+- fields: {category: L, course: 1, number: 43, title: Complex Vector Spaces}
+  model: core.section
+  pk: 62
+- fields: {category: L, course: 1, number: 44, title: Complex Inner Product Spaces}
+  model: core.section
+  pk: 63
+- fields: {category: L, course: 1, number: 45, title: 'Unitary, Normal and Hermitian
+      Matrices'}
+  model: core.section
+  pk: 64
 - fields: {author: Howard Anton, edition: '', title: Elementary Linear Algebra}
   model: core.book
   pk: 1
@@ -2167,432 +2183,4 @@
     concepts: []
     index: ''
     points: 3
-    question: "Prove the formula for a geometric series\r\n\r\n\r\n\r\n"
-    section: 52
-  model: core.question
-  pk: 99
-- fields:
-    answer: "$$(n/2)(n+1)$$\r\n\r\n\r\n"
-    book: 2
-    book_section: '14'
-    category: P
-    concepts: []
-    index: ''
-    points: 1
-    question: "What is $\\sum_{i=0}^n i$?\r\n\r\n\r\n\r\n\r\n"
-    section: 52
-  model: core.question
-  pk: 100
-- fields:
-    answer: "$$a \\frac{r^n - 1}{r - 1}$$\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '14'
-    category: S
-    concepts: []
-    index: ''
-    points: 1
-    question: "What is the general formula for $$\\sum_{i=0}^{n-1} ar^i$$?\r\n\r\n\
-      \r\n\r\n\r\n\r\n"
-    section: 52
-  model: core.question
-  pk: 101
-- fields:
-    answer: "$$n! = n \\times (n-1) \\times (n-2) \\times \\ldots \\times 4 \\times\
-      \ 3 \\times 2\r\n\\times 1$$\r\n"
-    book: 2
-    book_section: '15'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define the factorial of a number $n$.\r\n"
-    section: 53
-  model: core.question
-  pk: 102
-- fields:
-    answer: "Selecting $j$ objects with order from $n$.\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define a permutation of $n$ objects taken $j$ at a time\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 103
-- fields:
-    answer: "Selecting $j$ objects without order from $n$.\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define a combination of $n$ objects taken $j$ at a time\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 104
-- fields:
-    answer: "For n \\in N and any 0 \\le k \\le n, define {n \\choose k} to be the\
-      \ number of\r\nk-element subsets of the set {1, 2, ..., n}.\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define {n \\choose k}.\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 105
-- fields:
-    answer: "$$\\frac{n!}{j!(n-j)!} + \\frac{n!}{(j+1)!(n-j-1)!}$$\r\n$$=\\frac{n!(j+1)}{(j+1)j!(n-j)!}\
-      \ + \\frac{n!(n-j)}{(j+1)!(n-j)(n-j-1)!}$$\r\n$$=\\frac{n!(j+1)}{(j+1)!(n-j)!}\
-      \ + \\frac{n!(n-j)}{(j+1)!(n-j)!}$$\r\n$$=\\frac{n![j+1+n-j]{(j+1)!(n-j)!}$$\r\
-      \n$$ = {n+1 \\choose j + 1}$$\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: P
-    concepts: []
-    index: '15.7'
-    points: 3
-    question: "Show that ${n \\choose j} + {n \\choose j+1} = {n+1 \\choose j+1}$\r\
-      \n\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 106
-- fields:
-    answer: "1 4 6 4 1 \r\n\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: X
-    concepts: []
-    index: '15.11'
-    points: 2
-    question: "If you flip a coin 4 times, there are $2^4$ possible outcomes.\r\n\
-      How many of these outcomes have 0 heads? How many have 1 head? 2 heads? 3\r\n\
-      heads? 4 heads?\r\n\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 107
-- fields:
-    answer: "$$6.35 \\times 10^{11}$$\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: X
-    concepts: []
-    index: '15.14'
-    points: 1
-    question: "How many 13-card hands can you draw from a deck of 52 cards?\r\n\r\n\
-      \r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 108
-- fields:
-    answer: "15504\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: X
-    concepts: []
-    index: '15.15'
-    points: 1
-    question: " How many ways can you select a 5-member committee from a group\r\n\
-      of 20 people?\r\n\r\n\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 109
-- fields:
-    answer: "$$a^6 + 12a^5 + 60a^4 + 160a^3 + 240a^2 + 192a + 64$$\r\n\r\n\r\n\r\n\
-      \r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: X
-    concepts: []
-    index: '15.21'
-    points: 2
-    question: "Use the binomial formula to write expressions for $(a + 2)^6$.\r\n\r\
-      \n\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 110
-- fields:
-    answer: "<ul>\r\n<li>(1, 2, 3)\r\n<li>(2, 1, 3)\r\n<li>(3, 1, 2)\r\n<li>(1, 3,\
-      \ 2)\r\n<li>(2, 3, 1)\r\n<li>(3, 2, 1)\r\n</ul>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\
-      \n\r\n"
-    book: 1
-    book_section: '2.1'
-    category: X
-    concepts: []
-    index: Example 2.1.1
-    points: 1
-    question: "List all the permutations of the set of integers {1, 2,\r\n3}.\r\n\r\
-      \n\r\n\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 111
-- fields:
-    answer: "$$\\frac{n!}{(n-j)!}$$\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-    book: 1
-    book_section: '2.1'
-    category: X
-    concepts: []
-    index: ''
-    points: 1
-    question: "How many permutations of $n$ objects taken $j$ at a time are there?\r\
-      \n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 112
-- fields:
-    answer: "$$\\frac{n!}{j!(n-j)!}$$\r\n\r\nThis is also ${n \\choose j}$.\r\n\r\n\
-      \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: X
-    concepts: []
-    index: ''
-    points: 1
-    question: "How many combinations of $j$ objects from a group of $n$ objects are\
-      \ there?\r\nWhat is another name for this?\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\
-      \n"
-    section: 53
-  model: core.question
-  pk: 113
-- fields:
-    answer: "$$(a + b)^n = \\sum_{i = 0}^n {n \\choose i}a^ib^{n-i}$$\r\n\r\n\r\n\r\
-      \n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '15'
-    category: S
-    concepts: []
-    index: ''
-    points: 1
-    question: "State the Binomial formula\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
-    section: 53
-  model: core.question
-  pk: 114
-- fields:
-    answer: "Note that you can prove this for various cases of n:\r\n\r\n<ul>\r\n\
-      <li>n = 1: a = a\r\n<li>n = 2: a + (a+d) = 2a + d\r\n<li>n = 3: a + (a+d) +\
-      \ (a + 2d) = 3a + 3d\r\n</ul>\r\nNote that once you go to n = 4, you can recognize\
-      \ a previous term:\r\n\r\n$$a + (a+d) + (a+2d) + (a+3d) = 3a + 3d + a+3d = 4a\
-      \ + 6d$$\r\n\r\nThis motivates the idea of doing this sort of substitution generically."
-    book: 2
-    book_section: '16'
-    category: C
-    concepts: []
-    index: ''
-    points: 3
-    question: "Explain the motivation behind induction in terms of arithmetic series\
-      \ formula.\r\n"
-    section: 54
-  model: core.question
-  pk: 115
-- fields:
-    answer: "<ol type=\"1\">\r\n<li> The formula is true for $n = 1$ since it is $1\
-      \ = 1^2$\r\n<li> Assume $S_{2n-1} = n^2.\r\n<li> Then $S_{2(n+1) - 1} = n^2\
-      \ + (2n+1) - 1 = (n+1)^2$\r\n</ol>"
-    book: 2
-    book_section: '16'
-    category: X
-    concepts: []
-    index: '16.5'
-    points: 2
-    question: "Prove this formula by mathematical induction:\r\n$$1 + 3 +5 + 7 + \\\
-      cdots + (2n-1) = n^2$$\r\n"
-    section: 54
-  model: core.question
-  pk: 116
-- fields:
-    answer: "1 is odd and $1^2$ is odd. Assume $n$ is odd and $n^2$ is odd. The next\
-      \ odd\r\nnumber after $n$ is $n+2$. $(n+2)^2 = n^2 +4n+4 = n^2 + 2(2n+2)$. Since\
-      \ this is\r\nthe sum of an odd and an even number, it follows that $(n+2)^2$\
-      \ is odd.\r\n\r\n"
-    book: 2
-    book_section: '16'
-    category: X
-    concepts: []
-    index: '16.7'
-    points: 4
-    question: " Prove that if $n$ is odd, then $n^2$ is odd.\r\n"
-    section: 54
-  model: core.question
-  pk: 117
-- fields:
-    answer: "<ol type=\"1\">\r\n<li> Show that the fact holds for $n = 1$.\r\n<li>\
-      \ Next, assume the formula is true for an arbitrary number $j$.\r\n<li> Show\
-      \ that *if* the formula is true for the number $j$, then it must also be\r\n\
-      true for the number $j+1$.\r\n<li> Once you have completed these steps, then\
-      \ the formula has been proved to be\r\ntrue for all whole numbers.\r\n</ol>\r\
-      \n"
-    book: 2
-    book_section: '16'
-    category: S
-    concepts: []
-    index: ''
-    points: 3
-    question: "State the method of induction\r\n\r\n"
-    section: 54
-  model: core.question
-  pk: 118
-- fields:
-    answer: "Think of generational growth\r\n"
-    book: 2
-    book_section: '17'
-    category: C
-    concepts: []
-    index: ''
-    points: 1
-    question: "Give an example of how exponential growth occurs naturally.\r\n"
-    section: 55
-  model: core.question
-  pk: 119
-- fields:
-    answer: "For negative values $a^{-t} = 1/a^t$.\r\n\r\nwe define $a^{1/q} = \\\
-      sqrt[q]{a}$.\r\n\r\nFor rational values:\r\n$$a^{p/q} = a^pa^{1/q}$$\r\n"
-    book: 2
-    book_section: '17'
-    category: P
-    concepts: []
-    index: ''
-    points: 3
-    question: "Justify an exponential function for negative integers and rational\
-      \ values\r\nassuming the definition for positive integers. Note that in this\
-      \ level we do not\r\njustify irrational values.\r\n"
-    section: 55
-  model: core.question
-  pk: 120
-- fields:
-    answer: "$$F(x) = a^x$$\r\n\r\n"
-    book: 2
-    book_section: '17'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define an exponential function.\r\n\r\n"
-    section: 55
-  model: core.question
-  pk: 121
-- fields:
-    answer: "$$10^{log x} = x$$\r\n\r\n\r\n"
-    book: 2
-    book_section: '17'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define the common logarithm\r\n\r\n\r\n"
-    section: 55
-  model: core.question
-  pk: 122
-- fields:
-    answer: "$$3\\log(x + 4) + \\log(a+b) -2\\log(x-1) - \\log(a^2 + b^2)$$\r\n\r\n\
-      \r\n\r\n"
-    book: 2
-    book_section: '17'
-    category: X
-    concepts: []
-    index: '17.36'
-    points: 2
-    question: "Simplify\r\n$$\\log[ \\frac{(x+4)^3(a+b)}{(x-1)^2(a^2+b^2)}]$$\r\n\r\
-      \n\r\n"
-    section: 55
-  model: core.question
-  pk: 123
-- fields:
-    answer: "$$\\log(xy)  = \\log(x) + \\log(y)$$\r\n$$\\log(x/y) = \\log(x) - \\\
-      log(y)$$\r\n$$\\log(x^n) = n\\log(x)$$\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '17'
-    category: S
-    concepts: []
-    index: ''
-    points: 2
-    question: "State the rules of logarithms\r\n\r\n\r\n\r\n"
-    section: 55
-  model: core.question
-  pk: 124
-- fields:
-    answer: "It means that the planes do not have a common intersection. Either two\
-      \ planes\r\nare parallel, or the three intersections of the planes are in three\
-      \ parallel\r\nlines.\r\n"
-    book: 1
-    book_section: '1.1'
-    category: C
-    concepts: []
-    index: ''
-    points: 0
-    question: "What does it mean geometrically if three equations in three unknowns\
-      \ have no solution?\r\n"
-    section: 56
-  model: core.question
-  pk: 125
-- fields:
-    answer: "It is an equation of the form \r\n$$a_1x_1 + x_2x_2 + \\cdots x_nx_n\
-      \ = b$$\r\n\r\n\r\n"
-    book: 2
-    book_section: '18'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define a linear equation in $n$ variables.\r\n\r\n"
-    section: 56
-  model: core.question
-  pk: 126
-- fields:
-    answer: "A system of equations that has [at least one[no] solution is said to\
-      \ be\r\n[in]consistent.\r\n\r\n\r\n"
-    book: 2
-    book_section: '18'
-    category: D
-    concepts: []
-    index: ''
-    points: 1
-    question: "Define an [in]consistent system of equations.\r\n\r\n\r\n"
-    section: 56
-  model: core.question
-  pk: 127
-- fields:
-    answer: "$$a = 0.7906, b = 80.8837, c = 18.3255$$\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '18'
-    category: X
-    concepts: []
-    index: '18.7'
-    points: 3
-    question: "Solve this equation systems:\r\n\r\n$$a + b + c = 100$$\r\n$$b = 6\
-      \ + 2a + 4c$$\r\n$$c = 12 + 8a$$\r\n\r\n\r\n"
-    section: 56
-  model: core.question
-  pk: 128
-- fields:
-    answer: "$$2x^2 - x - 1$$\r\n\r\n\r\n\r\n\r\n"
-    book: 2
-    book_section: '18'
-    category: X
-    concepts: []
-    index: '18.13'
-    points: 3
-    question: "Find a second-degree polynomial that passes through each of\r\nthese\
-      \ three points: $(6, 65), (7, 90), (10, 189)$.\r\n\r\n"
-    section: 56
-  model: core.question
-  pk: 129
-- fields:
-    answer: "<ol type=\"1\">\r\n<li> You can multiply both sides of one of the equations\
-      \ by a number.\r\n<li> You can add one equation to another equation.\r\n<li>\
-      \ You can add to one equation a multiple of another equation.\r\n</ol>\r\n\r\
-      \n\r\n\r\n\r\n"
-    book: 2
-    book_section: '18'
-    category: S
-    concepts: []
-    index: ''
-    points: 2
-    question: "List legal moves to transform a system of equations\r\n\r\n\r\n"
-    section: 56
-  model: core.question
-  pk: 130
+    question: "Prove the form
