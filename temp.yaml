@@ -1,3 +1,4 @@
+Running `python manage.py dumpdata --natural --indent 2 --format=yaml core` attached to terminal... up, run.1
 - fields: {department: C, name: Learning Perl, number: 1, semester: U, year: 1996}
   model: core.course
   pk: 2
@@ -7,6 +8,10 @@
 - fields: {department: M, name: Linear Algebra, number: 215, semester: F, year: 1995}
   model: core.course
   pk: 1
+- fields: {department: C, name: Introduction to Programming with Java, number: 126,
+    semester: F, year: 2011}
+  model: core.course
+  pk: 4
 - fields: {category: L, course: 1, number: 1, title: Vectors in 2- and 3-space}
   model: core.section
   pk: 1
@@ -208,6 +213,99 @@
       Matrices'}
   model: core.section
   pk: 64
+- fields: {category: L, course: 4, number: 1, title: Prologue}
+  model: core.section
+  pk: 65
+- fields: {category: L, course: 4, number: 2, title: Introduction to Java}
+  model: core.section
+  pk: 66
+- fields: {category: L, course: 4, number: 3, title: Hello World}
+  model: core.section
+  pk: 67
+- fields: {category: L, course: 4, number: 4, title: Conditionals and Loops}
+  model: core.section
+  pk: 68
+- fields: {category: L, course: 4, number: 5, title: Arrays}
+  model: core.section
+  pk: 69
+- fields: {category: L, course: 4, number: 6, title: 'Conditionals,Loops Programs'}
+  model: core.section
+  pk: 70
+- fields: {category: L, course: 4, number: 7, title: Input and Output}
+  model: core.section
+  pk: 71
+- fields: {category: L, course: 4, number: 8, title: Functions}
+  model: core.section
+  pk: 72
+- fields: {category: L, course: 4, number: 9, title: N-Body Simulation}
+  model: core.section
+  pk: 73
+- fields: {category: L, course: 4, number: 10, title: Recursion}
+  model: core.section
+  pk: 74
+- fields: {category: L, course: 4, number: 12, title: Recursive Graphics}
+  model: core.section
+  pk: 75
+- fields: {category: L, course: 4, number: 13, title: Von Neumann Machine I}
+  model: core.section
+  pk: 76
+- fields: {category: L, course: 4, number: 14, title: Von Neumann Machine II}
+  model: core.section
+  pk: 77
+- fields: {category: L, course: 4, number: 15, title: Scientific Computing}
+  model: core.section
+  pk: 78
+- fields: {category: L, course: 4, number: 16, title: Hamming Codes}
+  model: core.section
+  pk: 79
+- fields: {category: L, course: 4, number: 17, title: Using Data Types}
+  model: core.section
+  pk: 80
+- fields: {category: L, course: 4, number: 18, title: Creating Data Types}
+  model: core.section
+  pk: 81
+- fields: {category: L, course: 4, number: 19, title: Linear Feedback Shift Register}
+  model: core.section
+  pk: 82
+- fields: {category: L, course: 4, number: 20, title: Stacks and Queues}
+  model: core.section
+  pk: 83
+- fields: {category: L, course: 4, number: 21, title: Symbol Tables}
+  model: core.section
+  pk: 84
+- fields: {category: L, course: 4, number: 22, title: Guitar Hero}
+  model: core.section
+  pk: 85
+- fields: {category: L, course: 4, number: 23, title: 'Case Study: Small World'}
+  model: core.section
+  pk: 86
+- fields: {category: L, course: 4, number: 24, title: Regular Expressions}
+  model: core.section
+  pk: 87
+- fields: {category: L, course: 4, number: 25, title: Markov Model}
+  model: core.section
+  pk: 88
+- fields: {category: L, course: 4, number: 26, title: Universality and Computability}
+  model: core.section
+  pk: 89
+- fields: {category: L, course: 4, number: 27, title: Intractability}
+  model: core.section
+  pk: 90
+- fields: {category: L, course: 4, number: 28, title: Traveling Salesperson Problem}
+  model: core.section
+  pk: 91
+- fields: {category: L, course: 4, number: 29, title: Circuits}
+  model: core.section
+  pk: 92
+- fields: {category: L, course: 4, number: 30, title: Architecture}
+  model: core.section
+  pk: 93
+- fields: {category: L, course: 4, number: 31, title: Atomic Nature of Matter}
+  model: core.section
+  pk: 94
+- fields: {category: L, course: 4, number: 11, title: Performance}
+  model: core.section
+  pk: 95
 - fields: {author: Howard Anton, edition: '', title: Elementary Linear Algebra}
   model: core.book
   pk: 1
@@ -218,6 +316,10 @@
       Approach'}
   model: core.book
   pk: 3
+- fields: {author: R. Sedgewick and K. Wayne, edition: '', title: 'Introduction to
+      Programming in Java: An Interdisciplinary Approach'}
+  model: core.book
+  pk: 4
 - fields: {name: Geometric Vectors, section: 1}
   model: core.concept
   pk: 1
@@ -902,6 +1004,33 @@
 - fields: {name: 'Principal Axes theorem for $\mathbb{R}^3$', section: 40}
   model: core.concept
   pk: 224
+- fields: {name: Basic Static Method Writing, section: 72}
+  model: core.concept
+  pk: 225
+- fields: {name: Static Methods With Array Arguments and Side Effects on Arrays, section: 72}
+  model: core.concept
+  pk: 226
+- fields: {name: Using Static methods in other programs, section: 72}
+  model: core.concept
+  pk: 227
+- fields: {name: 'Libraries, Clients and APIs', section: 72}
+  model: core.concept
+  pk: 228
+- fields: {name: Unit Testing, section: 72}
+  model: core.concept
+  pk: 229
+- fields: {name: Basic Recursion, section: 74}
+  model: core.concept
+  pk: 230
+- fields: {name: Towers of Hanoi, section: 74}
+  model: core.concept
+  pk: 231
+- fields: {name: Function Call Trees, section: 74}
+  model: core.concept
+  pk: 232
+- fields: {name: Recursion and Recurrence Relations, section: 74}
+  model: core.concept
+  pk: 233
 - fields:
     answer: "When they have the same length and same direction, even if the initial\
       \ andterminal points are not the same.\r\n"
@@ -2183,4 +2312,2275 @@
     concepts: []
     index: ''
     points: 3
-    question: "Prove the form
+    question: "Prove the formula for a geometric series\r\n\r\n\r\n\r\n"
+    section: 52
+  model: core.question
+  pk: 99
+- fields:
+    answer: "$$(n/2)(n+1)$$\r\n\r\n\r\n"
+    book: 2
+    book_section: '14'
+    category: P
+    concepts: []
+    index: ''
+    points: 1
+    question: "What is $\\sum_{i=0}^n i$?\r\n\r\n\r\n\r\n\r\n"
+    section: 52
+  model: core.question
+  pk: 100
+- fields:
+    answer: "$$a \\frac{r^n - 1}{r - 1}$$\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '14'
+    category: S
+    concepts: []
+    index: ''
+    points: 1
+    question: "What is the general formula for $$\\sum_{i=0}^{n-1} ar^i$$?\r\n\r\n\
+      \r\n\r\n\r\n\r\n"
+    section: 52
+  model: core.question
+  pk: 101
+- fields:
+    answer: "$$n! = n \\times (n-1) \\times (n-2) \\times \\ldots \\times 4 \\times\
+      \ 3 \\times 2\r\n\\times 1$$\r\n"
+    book: 2
+    book_section: '15'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the factorial of a number $n$.\r\n"
+    section: 53
+  model: core.question
+  pk: 102
+- fields:
+    answer: "Selecting $j$ objects with order from $n$.\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define a permutation of $n$ objects taken $j$ at a time\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 103
+- fields:
+    answer: "Selecting $j$ objects without order from $n$.\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define a combination of $n$ objects taken $j$ at a time\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 104
+- fields:
+    answer: "For n \\in N and any 0 \\le k \\le n, define {n \\choose k} to be the\
+      \ number of\r\nk-element subsets of the set {1, 2, ..., n}.\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define {n \\choose k}.\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 105
+- fields:
+    answer: "$$\\frac{n!}{j!(n-j)!} + \\frac{n!}{(j+1)!(n-j-1)!}$$\r\n$$=\\frac{n!(j+1)}{(j+1)j!(n-j)!}\
+      \ + \\frac{n!(n-j)}{(j+1)!(n-j)(n-j-1)!}$$\r\n$$=\\frac{n!(j+1)}{(j+1)!(n-j)!}\
+      \ + \\frac{n!(n-j)}{(j+1)!(n-j)!}$$\r\n$$=\\frac{n![j+1+n-j]{(j+1)!(n-j)!}$$\r\
+      \n$$ = {n+1 \\choose j + 1}$$\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: P
+    concepts: []
+    index: '15.7'
+    points: 3
+    question: "Show that ${n \\choose j} + {n \\choose j+1} = {n+1 \\choose j+1}$\r\
+      \n\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 106
+- fields:
+    answer: "1 4 6 4 1 \r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: X
+    concepts: []
+    index: '15.11'
+    points: 2
+    question: "If you flip a coin 4 times, there are $2^4$ possible outcomes.\r\n\
+      How many of these outcomes have 0 heads? How many have 1 head? 2 heads? 3\r\n\
+      heads? 4 heads?\r\n\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 107
+- fields:
+    answer: "$$6.35 \\times 10^{11}$$\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: X
+    concepts: []
+    index: '15.14'
+    points: 1
+    question: "How many 13-card hands can you draw from a deck of 52 cards?\r\n\r\n\
+      \r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 108
+- fields:
+    answer: "15504\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: X
+    concepts: []
+    index: '15.15'
+    points: 1
+    question: " How many ways can you select a 5-member committee from a group\r\n\
+      of 20 people?\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 109
+- fields:
+    answer: "$$a^6 + 12a^5 + 60a^4 + 160a^3 + 240a^2 + 192a + 64$$\r\n\r\n\r\n\r\n\
+      \r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: X
+    concepts: []
+    index: '15.21'
+    points: 2
+    question: "Use the binomial formula to write expressions for $(a + 2)^6$.\r\n\r\
+      \n\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 110
+- fields:
+    answer: "<ul>\r\n<li>(1, 2, 3)\r\n<li>(2, 1, 3)\r\n<li>(3, 1, 2)\r\n<li>(1, 3,\
+      \ 2)\r\n<li>(2, 3, 1)\r\n<li>(3, 2, 1)\r\n</ul>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\
+      \n\r\n"
+    book: 1
+    book_section: '2.1'
+    category: X
+    concepts: []
+    index: Example 2.1.1
+    points: 1
+    question: "List all the permutations of the set of integers {1, 2,\r\n3}.\r\n\r\
+      \n\r\n\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 111
+- fields:
+    answer: "$$\\frac{n!}{(n-j)!}$$\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '2.1'
+    category: X
+    concepts: []
+    index: ''
+    points: 1
+    question: "How many permutations of $n$ objects taken $j$ at a time are there?\r\
+      \n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 112
+- fields:
+    answer: "$$\\frac{n!}{j!(n-j)!}$$\r\n\r\nThis is also ${n \\choose j}$.\r\n\r\n\
+      \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: X
+    concepts: []
+    index: ''
+    points: 1
+    question: "How many combinations of $j$ objects from a group of $n$ objects are\
+      \ there?\r\nWhat is another name for this?\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\
+      \n"
+    section: 53
+  model: core.question
+  pk: 113
+- fields:
+    answer: "$$(a + b)^n = \\sum_{i = 0}^n {n \\choose i}a^ib^{n-i}$$\r\n\r\n\r\n\r\
+      \n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '15'
+    category: S
+    concepts: []
+    index: ''
+    points: 1
+    question: "State the Binomial formula\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 53
+  model: core.question
+  pk: 114
+- fields:
+    answer: "Note that you can prove this for various cases of n:\r\n\r\n<ul>\r\n\
+      <li>n = 1: a = a\r\n<li>n = 2: a + (a+d) = 2a + d\r\n<li>n = 3: a + (a+d) +\
+      \ (a + 2d) = 3a + 3d\r\n</ul>\r\nNote that once you go to n = 4, you can recognize\
+      \ a previous term:\r\n\r\n$$a + (a+d) + (a+2d) + (a+3d) = 3a + 3d + a+3d = 4a\
+      \ + 6d$$\r\n\r\nThis motivates the idea of doing this sort of substitution generically."
+    book: 2
+    book_section: '16'
+    category: C
+    concepts: []
+    index: ''
+    points: 3
+    question: "Explain the motivation behind induction in terms of arithmetic series\
+      \ formula.\r\n"
+    section: 54
+  model: core.question
+  pk: 115
+- fields:
+    answer: "<ol type=\"1\">\r\n<li> The formula is true for $n = 1$ since it is $1\
+      \ = 1^2$\r\n<li> Assume $S_{2n-1} = n^2.\r\n<li> Then $S_{2(n+1) - 1} = n^2\
+      \ + (2n+1) - 1 = (n+1)^2$\r\n</ol>"
+    book: 2
+    book_section: '16'
+    category: X
+    concepts: []
+    index: '16.5'
+    points: 2
+    question: "Prove this formula by mathematical induction:\r\n$$1 + 3 +5 + 7 + \\\
+      cdots + (2n-1) = n^2$$\r\n"
+    section: 54
+  model: core.question
+  pk: 116
+- fields:
+    answer: "1 is odd and $1^2$ is odd. Assume $n$ is odd and $n^2$ is odd. The next\
+      \ odd\r\nnumber after $n$ is $n+2$. $(n+2)^2 = n^2 +4n+4 = n^2 + 2(2n+2)$. Since\
+      \ this is\r\nthe sum of an odd and an even number, it follows that $(n+2)^2$\
+      \ is odd.\r\n\r\n"
+    book: 2
+    book_section: '16'
+    category: X
+    concepts: []
+    index: '16.7'
+    points: 4
+    question: " Prove that if $n$ is odd, then $n^2$ is odd.\r\n"
+    section: 54
+  model: core.question
+  pk: 117
+- fields:
+    answer: "<ol type=\"1\">\r\n<li> Show that the fact holds for $n = 1$.\r\n<li>\
+      \ Next, assume the formula is true for an arbitrary number $j$.\r\n<li> Show\
+      \ that *if* the formula is true for the number $j$, then it must also be\r\n\
+      true for the number $j+1$.\r\n<li> Once you have completed these steps, then\
+      \ the formula has been proved to be\r\ntrue for all whole numbers.\r\n</ol>\r\
+      \n"
+    book: 2
+    book_section: '16'
+    category: S
+    concepts: []
+    index: ''
+    points: 3
+    question: "State the method of induction\r\n\r\n"
+    section: 54
+  model: core.question
+  pk: 118
+- fields:
+    answer: "Think of generational growth\r\n"
+    book: 2
+    book_section: '17'
+    category: C
+    concepts: []
+    index: ''
+    points: 1
+    question: "Give an example of how exponential growth occurs naturally.\r\n"
+    section: 55
+  model: core.question
+  pk: 119
+- fields:
+    answer: "For negative values $a^{-t} = 1/a^t$.\r\n\r\nwe define $a^{1/q} = \\\
+      sqrt[q]{a}$.\r\n\r\nFor rational values:\r\n$$a^{p/q} = a^pa^{1/q}$$\r\n"
+    book: 2
+    book_section: '17'
+    category: P
+    concepts: []
+    index: ''
+    points: 3
+    question: "Justify an exponential function for negative integers and rational\
+      \ values\r\nassuming the definition for positive integers. Note that in this\
+      \ level we do not\r\njustify irrational values.\r\n"
+    section: 55
+  model: core.question
+  pk: 120
+- fields:
+    answer: "$$F(x) = a^x$$\r\n\r\n"
+    book: 2
+    book_section: '17'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define an exponential function.\r\n\r\n"
+    section: 55
+  model: core.question
+  pk: 121
+- fields:
+    answer: "$$10^{log x} = x$$\r\n\r\n\r\n"
+    book: 2
+    book_section: '17'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the common logarithm\r\n\r\n\r\n"
+    section: 55
+  model: core.question
+  pk: 122
+- fields:
+    answer: "$$3\\log(x + 4) + \\log(a+b) -2\\log(x-1) - \\log(a^2 + b^2)$$\r\n\r\n\
+      \r\n\r\n"
+    book: 2
+    book_section: '17'
+    category: X
+    concepts: []
+    index: '17.36'
+    points: 2
+    question: "Simplify\r\n$$\\log[ \\frac{(x+4)^3(a+b)}{(x-1)^2(a^2+b^2)}]$$\r\n\r\
+      \n\r\n"
+    section: 55
+  model: core.question
+  pk: 123
+- fields:
+    answer: "$$\\log(xy)  = \\log(x) + \\log(y)$$\r\n$$\\log(x/y) = \\log(x) - \\\
+      log(y)$$\r\n$$\\log(x^n) = n\\log(x)$$\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '17'
+    category: S
+    concepts: []
+    index: ''
+    points: 2
+    question: "State the rules of logarithms\r\n\r\n\r\n\r\n"
+    section: 55
+  model: core.question
+  pk: 124
+- fields:
+    answer: "It means that the planes do not have a common intersection. Either two\
+      \ planes\r\nare parallel, or the three intersections of the planes are in three\
+      \ parallel\r\nlines.\r\n"
+    book: 1
+    book_section: '1.1'
+    category: C
+    concepts: []
+    index: ''
+    points: 0
+    question: "What does it mean geometrically if three equations in three unknowns\
+      \ have no solution?\r\n"
+    section: 56
+  model: core.question
+  pk: 125
+- fields:
+    answer: "It is an equation of the form \r\n$$a_1x_1 + x_2x_2 + \\cdots x_nx_n\
+      \ = b$$\r\n\r\n\r\n"
+    book: 2
+    book_section: '18'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define a linear equation in $n$ variables.\r\n\r\n"
+    section: 56
+  model: core.question
+  pk: 126
+- fields:
+    answer: "A system of equations that has [at least one[no] solution is said to\
+      \ be\r\n[in]consistent.\r\n\r\n\r\n"
+    book: 2
+    book_section: '18'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define an [in]consistent system of equations.\r\n\r\n\r\n"
+    section: 56
+  model: core.question
+  pk: 127
+- fields:
+    answer: "$$a = 0.7906, b = 80.8837, c = 18.3255$$\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '18'
+    category: X
+    concepts: []
+    index: '18.7'
+    points: 3
+    question: "Solve this equation systems:\r\n\r\n$$a + b + c = 100$$\r\n$$b = 6\
+      \ + 2a + 4c$$\r\n$$c = 12 + 8a$$\r\n\r\n\r\n"
+    section: 56
+  model: core.question
+  pk: 128
+- fields:
+    answer: "$$2x^2 - x - 1$$\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '18'
+    category: X
+    concepts: []
+    index: '18.13'
+    points: 3
+    question: "Find a second-degree polynomial that passes through each of\r\nthese\
+      \ three points: $(6, 65), (7, 90), (10, 189)$.\r\n\r\n"
+    section: 56
+  model: core.question
+  pk: 129
+- fields:
+    answer: "<ol type=\"1\">\r\n<li> You can multiply both sides of one of the equations\
+      \ by a number.\r\n<li> You can add one equation to another equation.\r\n<li>\
+      \ You can add to one equation a multiple of another equation.\r\n</ol>\r\n\r\
+      \n\r\n\r\n\r\n"
+    book: 2
+    book_section: '18'
+    category: S
+    concepts: []
+    index: ''
+    points: 2
+    question: "List legal moves to transform a system of equations\r\n\r\n\r\n"
+    section: 56
+  model: core.question
+  pk: 130
+- fields:
+    answer: "Ax = b is defined so that it represents a system of 3 equations in 3\
+      \ unknowns\r\n"
+    book: 2
+    book_section: '19'
+    category: C
+    concepts: []
+    index: ''
+    points: 1
+    question: "Motivate the definition of Ax where A is a 3x3 matrix and x is a 3x1\
+      \ vector.\r\n"
+    section: 57
+  model: core.question
+  pk: 131
+- fields:
+    answer: "Multiply both sides by $A^{-1}$:\r\n\r\n$$A^{-1}Ax = A^{-1}d$$\r\n$$Ix\
+      \ = A^{-1}d$$\r\n$$x = A^{-1}d$$\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: C
+    concepts: []
+    index: ''
+    points: 1
+    question: "Explain how to use $A^{-1}$ to solve $Ax = d$\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 132
+- fields:
+    answer: "<ol type=\"1\">\r\n<li> $\\det(A^{-1}) = \\frac{1}{det(A)}$\r\n<li> $\\\
+      det(AB)     = \\det(AB)$\r\n<li> If $\\det(A) = 0$ then the matrix $A$ has no\
+      \ inverse\r\n</ol>"
+    book: 2
+    book_section: '19'
+    category: S
+    concepts: []
+    index: ''
+    points: 2
+    question: "State 3 properties of determinants:\r\n"
+    section: 59
+  model: core.question
+  pk: 133
+- fields:
+    answer: "A matrix is a rectangular array of numbers. Two matrices are equal if\
+      \ they have the same size and their corresponding entries are equal.\r\n\r\n\
+      \r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define a matrix and when two matrices are equal.\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 134
+- fields:
+    answer: "The coefficients of the $a_ix_i$ terms along with the last column of\
+      \ constant\r\nterms in a rectangular array.\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '19'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the augmented matrix for a system of linear equations\r\n\r\n\
+      \r\n"
+    section: 57
+  model: core.question
+  pk: 135
+- fields:
+    answer: "The zero matrix an array of all zeros. For addition first note that the\
+      \ matrices need to have the same dimensions. Then you just add component wise\r\
+      \n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '1.1'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the zero matrix. Define addition of matrices\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 136
+- fields:
+    answer: "Multiply each element of the array by that scalar.\r\n\r\n\r\n\r\n\r\n\
+      \r\n"
+    book: 2
+    book_section: '19'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the multiplication of a matrix by a scalar.\r\n\r\n\r\n\r\n\r\
+      \n"
+    section: 57
+  model: core.question
+  pk: 137
+- fields:
+    answer: "<ol type=\"1\">\r\n<li> start with the first row of A and the first column\
+      \ of B.\r\n<li> multiply the corresponding elements of this row and column\r\
+      \n<li> Add all the products together, and the result is the entry in the first\
+      \ row\r\nand column of AB.\r\n<li> Repeat this process to find each element\
+      \ of AB, using the ith row of A and\r\nthe jth columbn of B to get the element\
+      \ in the ith row and jth column of AB.\r\n</ol>\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: D
+    concepts: []
+    index: ''
+    points: 2
+    question: "Define matrix multiplication: $AB$ (where the number of columns of\
+      \ A equals the\r\nnumber of rows of B).\r\n\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 138
+- fields:
+    answer: "$$\\det \\begin{pmatrix} a_1 b_1 c_1 \\\\ a_2 b_2 c_2 \\\\ a_3 b_3 c_3\
+      \ \\\\\r\n\\end{pmatrix}$$\r\n$$ = a_1b_2c_3 + a_2b_3c_1 + a_3b_1c_2 - a_3b_2c_1\
+      \ - a_2b_1c_3 - a_1b_3c_2$$"
+    book: 2
+    book_section: '19'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the determinant of a 3x3 matrix\r\n\r\n"
+    section: 59
+  model: core.question
+  pk: 139
+- fields:
+    answer: "No: \r\n$$A = \\begin{pmatrix} 6 & 12 \\\\ 4 & 2 \\\\ \\end{pmatrix}$$\r\
+      \n$$B = \\begin{pmatrix} 11 & 6 \\\\ 1 & 7 \\\\ \\end{pmatrix}$$\r\n\r\nThen\
+      \ \r\n$$AB = \\begin{pmatrix} 78 & 120 \\\\ 46 & 38 \\\\ \\end{pmatrix}$$\r\n\
+      $$BA = \\begin{pmatrix} 90 & 144 \\\\ 34 & 26 \\\\ \\end{pmatrix}$$\r\n\r\n\r\
+      \n\r\n\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: E
+    concepts: []
+    index: ''
+    points: 2
+    question: "Is matrix multiplication commutative? If so prove it, if not give a\r\
+      \ncounterexample.\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 140
+- fields:
+    answer: "$$A + B = \\begin{pmatrix}\r\n    -2 & 4 & 5 & 4 \\\\ 1 & 2 & 2 & 3 \\\
+      \\ 7 & 0 & 3 & 5 \r\n          \\end{pmatrix}$$\r\n$$A - B = \\begin{pmatrix}\r\
+      \n    6 & -2 & -5 & 2 \\\\ -3 & -2 & 2 & 5 \\\\ 1 & -4 & 11 & -5 \r\n      \
+      \    \\end{pmatrix}$$\r\n$$2A    = \\begin{pmatrix}\r\n    4 & 2 & 0 & 6 \\\\\
+      \ -2 & 0 & 4 & 8 \\\\ 8 & -4 & 14 & 0 \r\n          \\end{pmatrix}$$\r\n$$-\\\
+      frac{1}{2}B = \\begin{pmatrix}\r\n    2 & -3/2 & -5/2 & -1/2 \\\\ -1 & -1 &\
+      \ 0 & 1/2 \\\\ -3/2 & -1 & 2 & -5/2 \r\n          \\end{pmatrix}$$\r\n\r\n\r\
+      \n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '1.3'
+    category: X
+    concepts: []
+    index: Eg 1.3.3-4
+    points: 3
+    question: "For the matrices\r\n$$A = \\begin{pmatrix} 2 & 1 & 0 & 3 \\\\ -1 &\
+      \ 0 & 2 & 4 \\\\ 4 & -2 & 7 & 0 \\end{pmatrix}$$\r\n$$B = \\begin{pmatrix} -4\
+      \ & 3 & 5 & 1 \\\\ 2 & 2 & 0 & -1 \\\\ 3 & 2 & -4 & 5\r\n\\end{pmatrix}$$\r\n\
+      Compute: $A + B$, $A - B$, $2A$, $(-\\frac{1}{2}B$:\r\n\r\n\r\n\r\n\r\n\r\n\r\
+      \n"
+    section: 57
+  model: core.question
+  pk: 141
+- fields:
+    answer: "$$\\begin{pmatrix} 132 & 92 \\\\ 92 & 62 \\\\ \\end{pmatrix} $$\r\n\r\
+      \n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '19'
+    category: X
+    concepts: []
+    index: '19.3'
+    points: 2
+    question: "Calculate\r\n$$\\begin{pmatrix} 4 & 12 \\\\ 4 & 7 \\\\ \\end{pmatrix}\
+      \ \\cdot\r\n  \\begin{pmatrix} 9 & 5 \\\\ 8 & 6 \\\\ \\end{pmatrix}$$\r\n\r\n\
+      \r\n\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 142
+- fields:
+    answer: "$$x = 6, y = 10, z = 4$$\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: X
+    concepts: []
+    index: '19.21'
+    points: 2
+    question: "Downing 19.21: Use the matrix triangularization process to solve:\r\
+      \n$$6x + 3y + 8z = 98$$\r\n$$5x + 11y - 9z = 104$$\r\n$$7x - 12y - 9z  -1144$\r\
+      \n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 143
+- fields:
+    answer: "$$0$$\r\n"
+    book: 2
+    book_section: '19'
+    category: X
+    concepts: []
+    index: '19.33'
+    points: 1
+    question: "Calculate the determinant of \r\n$$A = \\begin{pmatrix} 6 & 11 \\\\\
+      \ 12 & 22 \\\\ \\end{pmatrix}$$\r\n\r\n"
+    section: 59
+  model: core.question
+  pk: 144
+- fields:
+    answer: "No:\r\n\r\n$$A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 2 \\end{pmatrix}$$\r\
+      \n$$B = \\begin{pmatrix} 1 & 1 \\\\ 3 & 4 \\end{pmatrix}$$\r\n$$C = \\begin{pmatrix}\
+      \ 2 & 5 \\\\ 3 & 4 \\end{pmatrix}$$\r\n\r\nThen $AB = AC$.\r\n\r\n\r\n\r\n\r\
+      \n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '1.4'
+    category: E
+    concepts: []
+    index: 1.4.3
+    points: 2
+    question: "Does the cancellation law hold for Matrices? If so prove\r\nit, if\
+      \ not give a counterexample.\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 145
+- fields:
+    answer: "$$\\det \\begin{pmatrix} a & b \\\\ c & d \\\\ \\end{pmatrix} = ad -\
+      \ bc$$\r\n$$\\det \\begin{pmatrix} b & a \\\\ d & c \\\\ \\end{pmatrix} = bc\
+      \ - ad$$\r\n\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: P
+    concepts: []
+    index: '19.45'
+    points: 3
+    question: "Prove that for 2x2 matrices if you interchange two columns of\r\nthe\
+      \ determinant, then the value of determinant changes sign.\r\n\r\n"
+    section: 59
+  model: core.question
+  pk: 146
+- fields:
+    answer: "If $I$ is an identity matrix and $A$ is any other matrix with the same\
+      \ number\r\nof rows as $I$, then $IA = A.$ Alsi if $B$ has the same number of\
+      \ columns as\r\n$I$ then $BI = B$.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: S
+    concepts: []
+    index: ''
+    points: 1
+    question: "State the Identity Matrix Property\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 147
+- fields:
+    answer: "Let $A_i$ represent replacing the $ith$ column of $A$ with the column\
+      \ vector\r\n$d$.\r\n$$x = \\frac{ \\det(A_1) }{ \\det(A) }$$\r\n$$y = \\frac{\
+      \ \\det(A_2) }{ \\det(A) }$$\r\n$$z = \\frac{ \\det(A_3) }{ \\det(A) }$$\r\n\
+      \r\n\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: C
+    concepts: []
+    index: ''
+    points: 2
+    question: "State how to solve a 3x3 system using determinants:\r\n\r\n\r\n"
+    section: 59
+  model: core.question
+  pk: 148
+- fields:
+    answer: "<ol type=\"1\">\r\n<li>  $A + B = B + A$\r\n<li>  $A + (B + C) = (A+B)\
+      \ + C$\r\n<li>  $A(BC) = (AB)C$\r\n<li>  $A(B + C) = AB + AC$\r\n<li>  $(B+C)A\
+      \ = BA + CA$\r\n<li>  $A(B-C) = AB - AC$\r\n<li>  $(B-C)A = BA - CA$\r\n<li>\
+      \  $a(B+C) = aB + aC$\r\n<li>  $a(B-C) = aB - aC$\r\n<li> $(a+b)C = aC + bC$\r\
+      \n<li> $(a-b)C = aC - bC$\r\n<li> $a(bC)  = (ab)C$\r\n<li> $a(BC)  = (aB)C =\
+      \ B(aC)$\r\n<li> $A + 0 = 0 + A = A$\r\n<li> $A - A = 0$\r\n<li> $A0 = 0$ and\
+      \ $0A = 0$ (not $A0 = 0 = 0A$).\r\n</ol>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\
+      \r\n"
+    book: 1
+    book_section: '1.4'
+    category: S
+    concepts: []
+    index: 1.4.1
+    points: 4
+    question: "State the basic properties of arthmetic of Matrices over\r\nthe reals.\
+      \ (hint there are 16)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 57
+  model: core.question
+  pk: 149
+- fields:
+    answer: "A^{-1} = 1/det(A) [ d -b]\r\n                  [-c  a]\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '19'
+    category: S
+    concepts: []
+    index: ''
+    points: 2
+    question: "Give the formula for the inverse of a 2x2 matrix in terms of determinants.\r\
+      \n\r\n\r\n\r\n"
+    section: 59
+  model: core.question
+  pk: 150
+- fields:
+    answer: "Considering quadratics where $b^2 - 4ac < 0$ such as $x^2 + x + 1 = 0$\r\
+      \nnaturally leads to solutions where $\\sqrt{-1}$ needs to be considered."
+    book: 2
+    book_section: '20'
+    category: C
+    concepts: []
+    index: ''
+    points: 1
+    question: "Give an example that leads us to imaginary numbers\r\n"
+    section: 58
+  model: core.question
+  pk: 151
+- fields:
+    answer: "Considering a complex number $a + bi$ (where $a$ and $b$ are real), we\
+      \ can plot\r\nthis number on the x-y plane by the coordinates $(a, b)$."
+    book: 2
+    book_section: '20'
+    category: C
+    concepts: []
+    index: ''
+    points: 1
+    question: "Explain the idea behind the complex plane.\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 152
+- fields:
+    answer: "By using the idea that $a + bi$ is a point on the complex plane, we note\
+      \ that\r\nthe length of the vector from the origin to this point is $\\sqrt{a^2\
+      \ + b^2}$.\r\n"
+    book: 2
+    book_section: '20'
+    category: C
+    concepts: []
+    index: ''
+    points: 2
+    question: "Motivate the definition of the absolute value of a complex number\r\
+      \n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 153
+- fields:
+    answer: "An imaginary number is a multiple of $i = \\sqrt{-1}$. Thus $ai = \\\
+      sqrt{-a^2}$. A complex number is A real number plus an imaginary number. The\
+      \ real number is called the real part\r\nand the imaginary number is called\
+      \ the imaginary part.\r\n"
+    book: 2
+    book_section: '20'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define imaginary and complex numbers.\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 154
+- fields:
+    answer: "a + bi = c + di if a = c and b = d\r\n\r\n"
+    book: 2
+    book_section: '20'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define when two complex numbers are equal.\r\n\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 155
+- fields:
+    answer: "$$|a + bi| = \\sqrt{a^2 + b^2}$$\r\n\r\n\r\n"
+    book: 2
+    book_section: '20'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the absolute value (or modulus) of a complex number\r\n\r\n\r\
+      \n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 156
+- fields:
+    answer: "$$41 + 129i$$\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '20'
+    category: X
+    concepts: []
+    index: '20.14'
+    points: 2
+    question: "Calculate \r\n$$(4 + 11i)(6-2i) + (3 + 5i)(10 + 7i)$$\r\n\r\n\r\n\r\
+      \n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 157
+- fields:
+    answer: "$$x = -4 \\pm 3i$$\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '20'
+    category: X
+    concepts: []
+    index: '20.14'
+    points: 2
+    question: "Find the solution to \r\n$$x^2 + 8x + 25 = 0$$\r\n\r\n\r\n\r\n\r\n\r\
+      \n"
+    section: 58
+  model: core.question
+  pk: 158
+- fields:
+    answer: "$$6/5 + (9/10)i$$\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '20'
+    category: X
+    concepts: []
+    index: '20.59'
+    points: 1
+    question: "Simplify \r\n$$\\frac{ 3 + 6i }{ 4 + 2i }$$\r\n\r\n\r\n\r\n\r\n\r\n\
+      \r\n"
+    section: 58
+  model: core.question
+  pk: 159
+- fields:
+    answer: "$$i - 1$$\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 2
+    book_section: '20'
+    category: X
+    concepts: []
+    index: '20.64'
+    points: 2
+    question: "Solve for $z$\r\n\r\n$$(i+1)z = -2$$\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 160
+- fields:
+    answer: "\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '10.1'
+    category: X
+    concepts: []
+    index: 10.1.1
+    points: 1
+    question: "Plot the point given below:\r\n<ol type=\"a\">\r\n<li> 2 + 3i\r\n<li>\
+      \ -4\r\n<li> -3-2i\r\n<li> -5i\r\n</ol>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 161
+- fields:
+    answer: "\r\n\r\n\r\n|z| = 5\r\n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '10.2'
+    category: X
+    concepts: []
+    index: 10.2.2
+    points: 1
+    question: "Find |z| if z = 3 - 4i\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 162
+- fields:
+    answer: "if z = a+bi then\r\n\r\nzz^* = (a+bi)(a-bi)\r\n     = a^2 -b^2i^2\r\n\
+      \     = a^2 + b^2\r\n     = |z|^2\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '10.2'
+    category: P
+    concepts: []
+    index: 10.2.1
+    points: 1
+    question: "Prove that $zz^* = |z|^2$ for any complex number $z$.\r\n\r\n\r\n\r\
+      \n\r\n\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 163
+- fields:
+    answer: "$z = 1/|z_2|^2 \\cdot z_1z_2^*$\r\n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '10.2'
+    category: P
+    concepts: []
+    index: 10.2.2
+    points: 1
+    question: "If $z_2 \\ne 0$, then what is the solution of $z_1 = z_2z$, given $z_1$\
+      \ and $z_2$.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 164
+- fields:
+    answer: "1) (z_1 + z_2)^* = z_1^* + z_2^*\r\n2) (z_1 - z_2)^* = z_1^* - z_2^*\r\
+      \n3) (z_1z_2)^* = z_1^*z_2^*\r\n4) (z_1/z_2)^* = z_1^*/z_2^*\r\n5) z^*^* = z\r\
+      \n\r\n\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '10.2'
+    category: S
+    concepts: []
+    index: 10.2.3
+    points: 3
+    question: "For any complex numbers $z$, $z_1$ and $z_2$, state 5\r\nproperties\
+      \ of the complex conjugate.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+    section: 58
+  model: core.question
+  pk: 165
+- fields:
+    answer: "Vectors can be represented geometrically as directed line segments or\
+      \ arrows in\r\n2- or 3-space. The tail of the arrow is called the initial point\
+      \ and then tip\r\nof the arrow is called the terminal point."
+    book: 1
+    book_section: '3.1'
+    category: C
+    concepts: [1]
+    index: ''
+    points: 1
+    question: "Explain how a vector is represented and use the terms initial point\
+      \ and terminal\r\npoint."
+    section: 1
+  model: core.question
+  pk: 166
+- fields:
+    answer: "$v + w$: Position the vector $w$ so that its initial point concides with\
+      \ the\r\nterminal point of $v$. The vector $v+w$ has initial point the same\
+      \ as $v$ and\r\nterminal point of $w$ as so positioned. Then we define the negative\
+      \ - $-v$: The vector whose terminal point is the initial point of $v$ and whose\r\
+      \ninitial point is the terminal point of $v$. Finally using these two definitions,\
+      \ the difference: $v - w = v + (-w)$.\r\n\r\n"
+    book: 1
+    book_section: '3.1'
+    category: D
+    concepts: [1]
+    index: ''
+    points: 2
+    question: Define the sum and difference of two vectors geometrically.
+    section: 1
+  model: core.question
+  pk: 167
+- fields:
+    answer: "$$|u| = \\sqrt{v_1^2 + v_2^2 + v_3^2}$$\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.1'
+    category: D
+    concepts: [6]
+    index: ''
+    points: 1
+    question: "Define the length (or norm) of a vector $v = (v_1, v_2, v_3)$ in 3-space.\r\
+      \n"
+    section: 1
+  model: core.question
+  pk: 168
+- fields:
+    answer: "$$\\sqrt{ (u_1 - v_1)^2 + (u_2 - v_2)^2 + (u_3 - v_3)^2 }$$\r\n\r\n\r\
+      \n\r\n"
+    book: 1
+    book_section: '3.2'
+    category: D
+    concepts: [8]
+    index: ''
+    points: 1
+    question: "Define the distance between two vectors $(u_1, u_2, u_3)$ and $(v_1,\
+      \ v_2, v_3)$\r\nin 3-space.\r\n"
+    section: 1
+  model: core.question
+  pk: 169
+- fields:
+    answer: "$$u \\cdot v = |u||v| \\cos \\theta.$$\r\n"
+    book: 1
+    book_section: '3.3'
+    category: D
+    concepts: [1, 6]
+    index: ''
+    points: 1
+    question: "Define the dot product of two 2- or 3-vectors where $\\theta$ is the\
+      \ angle\r\nbetween u and v."
+    section: 2
+  model: core.question
+  pk: 170
+- fields:
+    answer: "$$v = (7 - 2, 5 - (-1), (-8) - 4) = (5, 6, -12)$$\r\n"
+    book: 1
+    book_section: '3.1'
+    category: P
+    concepts: [3]
+    index: Example 3.1.2
+    points: 1
+    question: "Give the components of the vector $v = \\arrow{P_1P_2}$\r\nwith initial\
+      \ point $(2, -1, 4)$ and terminal point $(7, 5, -8)$.\r\n"
+    section: 1
+  model: core.question
+  pk: 171
+- fields:
+    answer: "$$(2, -1, 1) \\cdot (1, 1, 2) = 2 - 1 + 2 = 3$$\r\n$$= |(2, -1, 1)||(1,\
+      \ 1, 2)| \\cos \\theta$$\r\nSo,\r\n$$\\frac{ 3 }{ \\sqrt{6}\\sqrt{6} } = \\\
+      cos \\theta$$\r\n$$\\theta = \\pi/3$$\r\n"
+    book: 1
+    book_section: '3.2'
+    category: X
+    concepts: [1, 8]
+    index: Eg 3.2.2
+    points: 2
+    question: "Consider the vectors (2, -1, 1) and $(1, 1, 2)$ and find\r\nthe angle\
+      \ between them."
+    section: 2
+  model: core.question
+  pk: 172
+- fields:
+    answer: "The set of points $p$ is the set of points on the sphere of radius 1\
+      \ whose\r\ncenter is at the point $p_0$."
+    book: 1
+    book_section: '3.2'
+    category: X
+    concepts: [7]
+    index: 3.2.8
+    points: 1
+    question: "Let $p_0 = (x_0, y_0, z_0)$ and $p = (x, y, z)$. Describe the set\r\
+      \nof all points $p$ for which $|p - p_0| = 1$."
+    section: 1
+  model: core.question
+  pk: 173
+- fields:
+    answer: "$$p = tq$$\r\n$$(2, k) = (3t, 5t)$$\r\n$$t = 2/3$$\r\n$$p = (2, 10/3)$$"
+    book: 1
+    book_section: '3.3'
+    category: X
+    concepts: [1, 9]
+    index: 3.3.14
+    points: 2
+    question: "Let $p = (2, k)$ and $q = (3, 5)$ Find $k$ such that \r\n$p$ and $q$\
+      \ are parallel.\r\n"
+    section: 2
+  model: core.question
+  pk: 174
+- fields:
+    answer: "$$(a, b, c) \\cdot (x, y, z) = (ax, by, cz)$$\r\n"
+    book: 1
+    book_section: '3.3'
+    category: S
+    concepts: [1, 7]
+    index: ''
+    points: 1
+    question: "State, without proof, the simplified formula for the dot product (that\
+      \ is the\r\nformula in terms of components, not in terms of angles.)\r\n\r\n"
+    section: 2
+  model: core.question
+  pk: 175
+- fields:
+    answer: "Select a point O, called the origin. and choose three mutually perpendicular\r\
+      \nlines, called coordinate axes, passing through the origin. Label these axis\r\
+      \n$x$, $y$, and $z$. and select a positive direction for each coordinate axis."
+    book: 1
+    book_section: '3.1'
+    category: C
+    concepts: [3]
+    index: ''
+    points: 2
+    question: "Explain how to construct a rectangular coordinate system to describe\
+      \ vectors in\r\n3-space.\r\n"
+    section: 1
+  model: core.question
+  pk: 176
+- fields:
+    answer: "A right-handed system has the property that an ordinary screw pointed\
+      \ in the\r\npositive direction on the z-axis would be advanced if the positive\
+      \ $x$-axis is\r\nrotated 90 degrees toward the positive $y$-axis. \r\n"
+    book: 1
+    book_section: '3.1'
+    category: C
+    concepts: [3]
+    index: ''
+    points: 1
+    question: "Explain the difference between a left-handed versus right-handed coordinate\r\
+      \nsystem.\r\n"
+    section: 1
+  model: core.question
+  pk: 177
+- fields:
+    answer: "Suppose we have translated the axes of an $xy$-coordinate system to obtain\
+      \ a \r\n$x'y'$-coordinate system whose origin $O'$ is at the point $(x, y) =\
+      \ (k, l)$.\r\n\r\nA point $(x, y)$ has coordinates \r\n$$x' = x - k,\\ y = y\
+      \ - l$$\r\nin the $x'y'$-system. These equations are called the translation\
+      \ equations.\r\n\r\n"
+    book: 1
+    book_section: '3.1'
+    category: C
+    concepts: [4]
+    index: ''
+    points: 2
+    question: "Explain coordinate translation.\r\n\r\n"
+    section: 1
+  model: core.question
+  pk: 178
+- fields:
+    answer: "$$| \\frac{v}{|v|} | = \\frac{ |v| }{ |v| }$$\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.2'
+    category: X
+    concepts: [7]
+    index: 3.2.6a
+    points: 1
+    question: "Show that if v is a nonzero vector then \r\n$$\\frac{1}{|v|}v$$\r\n\
+      is a unit vector. \r\n\r\n"
+    section: 1
+  model: core.question
+  pk: 179
+- fields:
+    answer: "When the dot product is zero. \r\n"
+    book: 1
+    book_section: '3.3'
+    category: D
+    concepts: [1, 9]
+    index: ''
+    points: 1
+    question: "Define orthogonal vectors\r\n"
+    section: 2
+  model: core.question
+  pk: 180
+- fields:
+    answer: "$$proj_a u = \\frac{u \\cdot a}{|u|^2} a$$\r\n\r\n"
+    book: 1
+    book_section: '3.3'
+    category: D
+    concepts: [1, 2]
+    index: ''
+    points: 1
+    question: "Define the orthogonal projection of u on a.\r\n\r\n"
+    section: 2
+  model: core.question
+  pk: 181
+- fields:
+    answer: "$$u - proj_a u = u - \\frac{u \\cdot a}{|u|^2} a$$\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.3'
+    category: D
+    concepts: [2]
+    index: ''
+    points: 1
+    question: "Define the vector component of u orthogonal to a.\r\n\r\n\r\n"
+    section: 2
+  model: core.question
+  pk: 182
+- fields:
+    answer: "$$u \\cdot a = 15$$\r\n$$|a|^2 = 21$$\r\n\r\n$$\\proj_a u = (20/7, -5/7,\
+      \ 10/7)$$\r\n$$u - \\proj_a u = (-6/7, -2/7, 11/7)$$\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.3'
+    category: X
+    concepts: [2]
+    index: Eg 3.3.6
+    points: 2
+    question: "Let $u = (2, -1, 3)$ and $a = (4, -1, 2)$. Find the vector\r\ncomponent\
+      \ of $a$ along $a$ and the vector component of $u$ orthogonal to $a$.\r\n\r\n\
+      \r\n"
+    section: 2
+  model: core.question
+  pk: 183
+- fields:
+    answer: "No. For example $a = (0, 1)$, $b = (1, 1)$ and $c = (-1, 1)$.\r\n\r\n\
+      \r\n\r\n"
+    book: 1
+    book_section: '3.3'
+    category: E
+    concepts: [1, 9]
+    index: Eg 3.3.13
+    points: 1
+    question: "Suppose that $a \\cdot b = a \\cdot c$ and $a \\ne 0$. Does it\r\n\
+      follow that $b = c$.\r\n\r\n\r\n\r\n"
+    section: 2
+  model: core.question
+  pk: 184
+- fields:
+    answer: "Let $\\theta$ be the angle between $(1, 1, 1)$ and $(1, 1, 0)$.\r\n\r\
+      \n$$\\cos \\theta = \\frac{ (1, 1, 1)\\cdot(1, 1, 0) }{ |(1, 1, 1)||(1, 1, 0|\
+      \ }$$\r\n$$ = \\frac{2}{\\sqrt{3}\\sqrt{2}}$$\r\n$$\\theta \\approx 35.26$$\r\
+      \n\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.3'
+    category: X
+    concepts: [1, 8]
+    index: 3.3.18
+    points: 4
+    question: "Find the angle between a diagonal of a cube and one of its faces.\r\
+      \n\r\n\r\n\r\n"
+    section: 2
+  model: core.question
+  pk: 185
+- fields:
+    answer: "Let $u = (a, b, c)$ and $v = (x, y, z)$ be two nonzero vectors with terminal\r\
+      \npoints $P$ and $Q$ respectively. If $\\theta$ is the angle between them then\
+      \ the law of cosines (from High School Geometry) states:\r\n$$|PQ|^2 = |u|^2\
+      \ + |v|^2 - 2|u||v| \\cos \\theta$$\r\n\r\nSince $PQ = v - u$, we can write:\r\
+      \n$$|u||v|\\cos \\theta = \\frac{1}{2} (|u|^2 + |v|^2 - |v-u|^2)$$\r\n$$u \\\
+      cdot v         = \\frac{1}{2} (|u|^2 + |v|^2 - |v-u|^2)$$\r\nUsing the definition\
+      \ of norm:\r\n$$u \\cdot v         = \\frac{1}{2} (a^2 + b^2 + c^2 + x^2 + y^2\
+      \ + z^2 \r\n    - (a-x)^2 + (b-y)^2 + (c-z)^2)$$\r\n$$u \\cdot v         = \\\
+      frac{1}{2} ( -2ax - 2by - 2cz)$$\r\n$$                  = ax + by + cz$$\r\n\
+      \r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.3'
+    category: P
+    concepts: [1, 7]
+    index: ''
+    points: 4
+    question: "Prove the High School statement that the dot product of 3-vectors as\
+      \ defined in\r\nterms of the angle between vectors $\\theta$ is equal to the\
+      \ sum of the product\r\nof the components.\r\n\r\n\r\n\r\n"
+    section: 2
+  model: core.question
+  pk: 186
+- fields:
+    answer: "1) $u \\cdot v = v \\cdot u$\r\n2) $u \\cdot (v + w) = u \\cdot v + u\
+      \ \\cdot w$\r\n3) $k(u \\cdot v) = (ku) \\cdot v = u \\cdot (kv)$\r\n4) $v \\\
+      cdot v > 0$ if $v \\ne 0$ and $v \\cdot v = 0$ if $v = 0$."
+    book: 1
+    book_section: '3.3'
+    category: S
+    concepts: []
+    index: Thm 3.3.2
+    points: 2
+    question: "If u, v and w are 2- or 3-space and k is a scalar then\r\nstate the\
+      \ basic properties of the dot product.\r\n"
+    section: 2
+  model: core.question
+  pk: 187
+- fields:
+    answer: "1) $u + v = v + u$\r\n2) $u + 0 = 0 + u = u$\r\n3) $k(lu) = (kl)u$\r\n\
+      4) $(k+l)u = ku + lu$\r\n5) $(u + v) + w = u + (v + w)$\r\n6) $u + (-u) = 0$\r\
+      \n7) $k(u + v) = ku + kv$\r\n8) $1u = u$\r\n"
+    book: 1
+    book_section: '3.2'
+    category: S
+    concepts: []
+    index: Thm 3.2.1
+    points: 2
+    question: "If u, v, and w are vectors in 2- or 3-space and k and l\r\nare scalars\
+      \ give the basic properties.\r\n"
+    section: 1
+  model: core.question
+  pk: 188
+- fields:
+    answer: "Since the three points lie in a plane, we can write:\r\n$$a + 2b - c\
+      \ + d = 0$$\r\n$$2a + 3b + c + d = 0$$\r\n$$3a - b + 2c + d = 0$$\r\n\r\nSolving\
+      \ this system (using techniques from High School Algebra) we get \r\n$$a = -9/16t,\\\
+      \ v = 1/16t,\\ c = 5/16t\\ d = t$$\r\nSo letting $t = 16$, \r\n$$9x + y - 5z\
+      \ - 16 = 0$$"
+    book: 1
+    book_section: '3.5'
+    category: X
+    concepts: []
+    index: 3.5.2
+    points: 4
+    question: "Find the equation of the plane passing through the points\r\n$(1, 2,\
+      \ -1)$, $(2, 3, 1)$, and $(3, 1, -2)$."
+    section: 3
+  model: core.question
+  pk: 189
+- fields:
+    answer: "Since $(3, -4, 8)$ is parallel to $l$ and $(2, 4, -1)$ lies on $l$, the\
+      \ line\r\n$l$ is given by\r\n$$(x, y, z) = (2, 4, -1) + t(3, -4, 8)$$"
+    book: 1
+    book_section: '3.5'
+    category: X
+    concepts: []
+    index: 3.5.5a
+    points: 2
+    question: "Find parametetric equations for the line $l$ passing\r\nthrough the\
+      \ points $(2, 4, -1)$ and $(5, 0, 7)$."
+    section: 3
+  model: core.question
+  pk: 190
+- fields:
+    answer: "The equation for the plane through $a = (3, -6, 7)$ perpendicular to\
+      \ $n = (5,\r\n-2, 1)$ is\r\n\r\n$$n \\cdot (x - a) = 0$$\r\n\r\n$$5x_1 - 2x_2\
+      \ + x_3 = 34$$"
+    book: 1
+    book_section: '3.5'
+    category: X
+    concepts: []
+    index: 3.5.21
+    points: 1
+    question: "Find an equation for the plane that passes through the\r\npoint $(3,\
+      \ -6, 7)$ and is parallel to the plane $5x - 2y + z - 5 = 0$."
+    section: 3
+  model: core.question
+  pk: 191
+- fields:
+    answer: "Let these four points be $p_0, p_1, p_2$, and $p_4$.\r\n\r\nThe vector\
+      \ from $p_0$ to $p_1$ is $(-1, 2, 4)$\r\nThe vector from $p_0$ to $p_2$ is $(-3,\
+      \ 1, 2)$\r\n\r\nSince the vector from $p_0$ to $p_3$ $(3, 2, 4)$ is of the form\
+      \ \r\n$$s(-1, 2, 4) + t(-3, 1, 2) = (3, 2, 4)$$\r\n\r\nSolving these three equations\
+      \ we get $t = -8/5$ and $s = 9/5$.\r\n\r\nThus the 4 points lie in the same\
+      \ plane."
+    book: 1
+    book_section: '3.5'
+    category: X
+    concepts: []
+    index: 3.5.25
+    points: 4
+    question: "Show that the points $(-1, -2, -3)$, $(-2, 0, 1)$, $(-4,\r\n-1, -1)$,\
+      \ and $(2, 0, 1)$ lie in the same plane."
+    section: 3
+  model: core.question
+  pk: 192
+- fields:
+    answer: "The angle $\\theta$ between the line and the normal to the plane satisfies\r\
+      \n$$\\cos \\theta = \\frac{ (1, -2, -3) \\cdot (1, -1, -3) } \r\n    { |(1,\
+      \ -2, -3)| |(1, -1, -3)| }$$\r\n$$ = \\frac{12}{\\sqrt{14}\\sqrt{11}}$$\r\n\r\
+      \nSo $\\theta = 14.76$\r\n\r\nHence the angle between the line and the plane\
+      \ is $90 - \\theta \\approx 75$."
+    book: 1
+    book_section: '3.5'
+    category: X
+    concepts: []
+    index: 3.5.45
+    points: 4
+    question: "Find the acute angle of intersection between the plane\r\n$x - y -\
+      \ 3z = 5$ and the line $x = 2 - t,\\ y = 2t,\\ z = 3t - 1$ to the nearest\r\n\
+      degree.\r\n"
+    section: 3
+  model: core.question
+  pk: 193
+- fields:
+    answer: "By hypothesis, not all $a$, $b$ and $c$ are zero. Suppose that $a \\\
+      ne 0$. Then\r\nwe can write\r\n$$a(x + d/a)) + by + cz = 0$$\r\nwhich is the\
+      \ point-normal form of the plane. \r\n"
+    book: 1
+    book_section: '3.5'
+    category: P
+    concepts: []
+    index: 3.5.1
+    points: 2
+    question: "Prove that the general form of a plane defines, in fact, a\r\nplane.\r\
+      \n\r\n"
+    section: 3
+  model: core.question
+  pk: 194
+- fields:
+    answer: "Let $Q(x_1, y_1, z_1)$ be any point in the plane. Position the normal\
+      \ $n = (a,\r\nb, c)$ so that its initial point is at $Q$. The the distance $D$\
+      \ is equal to\r\nthe length of the orthogonal projection of $QP_0$ on $n$. Thus\
+      \ from\r\nAnton 3.1/3.2:\r\n\r\n$$D = | \\proj_a QP_0| = \\frac{ |QP_0 \\cdot\
+      \ n| }{ |n| }$$\r\n\r\nBut,\r\n$$QP_0 = (x_0 - x_1, y_0 - y_1, z_0 - z_1)$$\r\
+      \n$$QP_0 \\cdot n = a(x_0 - x_1) + b(y_0 - y_1) + c(z_0 - z_1)$$\r\n$$|n| =\
+      \ \\sqrt{a^2 + b^2 + c^2}$$\r\n\r\nThus by substituting these values in the\
+      \ formula above, we get:\r\n\r\n$$D = \\frac{ |a(x_0 - x_1) + b(y_0 - y_1) +\
+      \ c(z_0 - z_1)| }\r\n    { \\sqrt{a^2 + b^2 + c^2 } }$$\r\n\r\nSince $Q$ lies\
+      \ in the plane, its coordinates satisfy the equation of the plane,\r\nthus:\r\
+      \n$$ax_1 + by_1 + cz_1 + d = 0$$\r\nor\r\n$$d = -ax_1 - by_1 - cz_1$$\r\n\r\n\
+      Substituting this into the above we get the distance formula.\r\n"
+    book: 1
+    book_section: '3.5'
+    category: P
+    concepts: []
+    index: ''
+    points: 7
+    question: "Prove the distance formula for the distance between a point and a plane.\r\
+      \n\r\n"
+    section: 3
+  model: core.question
+  pk: 195
+- fields:
+    answer: "$$a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$$\r\n\r\n"
+    book: 1
+    book_section: '3.5'
+    category: S
+    concepts: []
+    index: ''
+    points: 1
+    question: "State the point-normal form of the equation of a plane for a plane\
+      \ going\r\nthrough $(x_0, y_0, z_0)$ with normal vector $(a, b, c)$.\r\n\r\n"
+    section: 3
+  model: core.question
+  pk: 196
+- fields:
+    answer: "If $(a, b, c)$ is the normal (not zero) for the plane then the general\
+      \ equation\r\nis:\r\n\r\n$$ax + by + cz + d = 0$$.\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.5'
+    category: S
+    concepts: []
+    index: 3.5.1
+    points: 1
+    question: "State the general form of the equation of a plane.\r\n\r\n"
+    section: 3
+  model: core.question
+  pk: 197
+- fields:
+    answer: "Let $(x_0, y_0, z_0)$ be a point on the plane and suppose the plane is\
+      \ parallel\r\nto $(a, b, c)$. Then\r\n$$(x, y, z) = (x_0, y_0, z_0) + t(a, b,\
+      \ c)$$\r\n\r\n\r\n"
+    book: 1
+    book_section: '3.5'
+    category: S
+    concepts: []
+    index: ''
+    points: 1
+    question: "State the parametric equations for a plane.\r\n\r\n\r\n"
+    section: 3
+  model: core.question
+  pk: 198
+- fields:
+    answer: "$$D = \\frac{ |ax_0 + by_0 + cz_0 + d| }{ \\sqrt{ a^2 + b^2 + c^2 } }$$\r\
+      \n\r\n\r\n"
+    book: 1
+    book_section: '3.5'
+    category: S
+    concepts: []
+    index: ''
+    points: 1
+    question: "State the formula for the distance between a point $(x_0, y_0, z_0)$\
+      \ and the\r\nplane in general form: $ax + by + cz + d = 0$.\r\n\r\n\r\n"
+    section: 3
+  model: core.question
+  pk: 199
+- fields:
+    answer: "The product $Ax$ is a linear combination of the column matrices of $A$\
+      \ with\r\ncoefficients coming from the matrix $x$. \r\n\r\n"
+    book: 1
+    book_section: '1.2'
+    category: C
+    concepts: []
+    index: ''
+    points: 1
+    question: "Explain $Ax$ in terms of linear combinations\r\n"
+    section: 5
+  model: core.question
+  pk: 200
+- fields:
+    answer: "1. Multiply a row by a nonzero constant.\r\n2. Interchange two rows.\r\
+      \n3. Add a multiple of one row to another row.\r\n\r\n"
+    book: 1
+    book_section: '1.3'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the elementary row operations.\r\n\r\n"
+    section: 5
+  model: core.question
+  pk: 201
+- fields:
+    answer: "To be in row-echelon form:\r\n1. if a row does not consist entirely of\
+      \ zeros, then the first nonzero number\r\nin the row is a 1.\r\n2. If there\
+      \ are any rows that consist entirely of zeros, then they are grouped\r\ntogether\
+      \ at the bottom of the matrix.\r\n3. In any two sucessive rows that are not\
+      \ all zero, the leading 1 in the lower\r\nrow occurs farther to the right than\
+      \ the leading 1 in the higher row.\r\n\r\nTo be in reduced row-echelon form\
+      \ 1-3 must hold, as well as:\r\n4. Each column that contains a leading 1 has\
+      \ zeroes everywhere else.\r\n\r\n"
+    book: 1
+    book_section: '1.3'
+    category: D
+    concepts: []
+    index: ''
+    points: 2
+    question: "Define [reduced] row-echelon form.\r\n\r\n\r\n"
+    section: 5
+  model: core.question
+  pk: 202
+- fields:
+    answer: "All the constant terms are zero.\r\n\r\n"
+    book: 1
+    book_section: '1.3'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define a homogeneous system of linear equations.\r\n\r\n\r\n\r\n"
+    section: 5
+  model: core.question
+  pk: 203
+- fields:
+    answer: "$$x_1 = 3,\\ x_2 = 1,\\ x_3 = 2$$\r\n\r\n\r\n"
+    book: 1
+    book_section: '1.3'
+    category: X
+    concepts: []
+    index: 1.2.6a
+    points: 2
+    question: "Solve this system by Gauss-Jordan Elminiation:\r\n$$x_1 + x_2 + 2x_3\
+      \ = 8$$\r\n$$-x_1 - 2x_2 + 3x_3 = 1$$\r\n$$3x_1 - 7x_2 + 4x_3 = 10$$\r\n\r\n\
+      \r\n\r\n\r\n"
+    section: 5
+  model: core.question
+  pk: 204
+- fields:
+    answer: "$$AB = \\begin{pmatrix} 67 & 41 & 41 \\\\ 64 & 21 & 59 \\\\ 63 & 67 &\
+      \ 57\r\n\\end{pmatrix}$$\r\n\r\n$$\\begin{pmatrix} 67 \\\\ 64 \\\\ 63 \\end{pmatrix}\
+      \ =\r\n   6\\begin{pmatrix} 3 \\\\ 6 \\\\ 0 \\end{pmatrix}\r\n   0\\begin{pmatrix}\
+      \ -2\\\\ 5 \\\\ 4 \\\\ \\end{pmatrix}\r\n   7\\begin{pmatrix} 7 \\\\ 4 \\\\\
+      \ 9 \\\\ \\end{pmatrix}$$\r\n\r\n$$\\begin{pmatrix} 41 \\\\ 21 \\\\ 67 \\end{pmatrix}\
+      \ =\r\n  -2\\begin{pmatrix} 3 \\\\ 6 \\\\ 0 \\end{pmatrix}\r\n   1\\begin{pmatrix}\
+      \ -2\\\\ 5 \\\\ 4 \\\\ \\end{pmatrix}\r\n   7\\begin{pmatrix} 7 \\\\ 4 \\\\\
+      \ 9 \\\\ \\end{pmatrix}$$\r\n\r\n$$\\begin{pmatrix} 41 \\\\ 59 \\\\ 57 \\end{pmatrix}\
+      \ =\r\n   4\\begin{pmatrix} 3 \\\\ 6 \\\\ 0 \\end{pmatrix}\r\n   3\\begin{pmatrix}\
+      \ -2\\\\ 5 \\\\ 4 \\\\ \\end{pmatrix}\r\n   5\\begin{pmatrix} 7 \\\\ 4 \\\\\
+      \ 9 \\\\ \\end{pmatrix}$$\r\n\r\n\r\n\r\n"
+    book: 1
+    book_section: '1.3'
+    category: X
+    concepts: []
+    index: 1.3.8
+    points: 2
+    question: "Let \r\n\r\n$$A = \\begin{pmatrix} 3 & -2 & 7 \\\\ 6 & 5 & 4 \\\\ 0\
+      \ & 4 & 9 \\end{pmatrix}$$\r\n$$B = \\begin{pmatrix} 6 & -2 & 4 \\\\ 0 & 1 7\
+      \ 3 \\\\ 7 & 7 & 5 \\end{pmatrix}$$\r\n\r\nThen express each row matrix of $AB$\
+      \ as a linear combination of the column\r\nmatrices of $A$.\r\n\r\n\r\n\r\n\r\
+      \n"
+    section: 5
+  model: core.question
+  pk: 205
+- fields:
+    answer: "Possible terminal points are of the form \r\n$$(-1, 3, -5) + t(6, 7,\
+      \ -3)$$\r\nwhere $t < 0.$"
+    book: 1
+    book_section: '3.1'
+    category: X
+    concepts: []
+    index: 3.1.4b
+    points: 1
+    question: Find a nonzero vector ${\bf u}$ with initial point $P(-1, 3, -5)$ such
+      that ${\bf u}$ is oppositely directed to ${\bf v}  = (6, 7, -3)$
+    section: 1
+  model: core.question
+  pk: 206
+- fields:
+    answer: "$$\\frac{1}{4} \\| {\\bf u} + {\\bf v} \\|^2 - \\frac{1}{4} \\|{\\bf\
+      \ u} - {\\bf v} \\|^2 = \\frac{1}{4}({\\bf u} + {\\bf v}) \\cdot ({\\bf u} +\
+      \ {\\bf v}) - \\frac{1}{4}({\\bf u} - {\\bf v}) \\cdot ({\\bf u} - {\\bf v})$$\r\
+      \n$$ = \\frac{1}{4} {\\bf u} \\cdot {\\bf u} + \\frac{1}{2} {\\bf u} \\cdot\
+      \ {\\bf v} + \\frac{1}{4} {\\bf v} \\cdot {\\bf v} - \\frac{1}{4} {\\bf u} \\\
+      cdot {\\bf u} + \\frac{1}{2} {\\bf u} \\cdot {\\bf v} - \\frac{1}{4} {\\bf v}\
+      \ \\cdot {\\bf v}$$\r\n= {\\bf u} \\cdot {\\bf v}$$"
+    book: 1
+    book_section: '3.3'
+    category: X
+    concepts: []
+    index: 3.3.17
+    points: 3
+    question: Establish the identity $$\|{\bf u} + {\bf v}\|^2 + \| {\bf u} - {\bf
+      v} \|^2 = 2\| {\bf u} |^2 + 2\| {\bf v} \|^2.$$
+    section: 2
+  model: core.question
+  pk: 207
+- fields:
+    answer: "They intersect because the system of 3 equations in 2 unknowns:\r\n$$3\
+      \ + 4t = -1 + 12s$$\r\n$$4 + t = 7 + 6s$$\r\n$$1 = 5 + 3s$$\r\nhas a solution,\
+      \ namely $s = -\\frac{4}{3},\\ t = -5$. The intersection is \r\n$$(x, y, z)\
+      \ = (-17, -1, 1)$$"
+    book: 1
+    book_section: '3.5'
+    category: X
+    concepts: []
+    index: 3.5.35
+    points: 2
+    question: "Show that the line\r\n$$ x - 3=4t,\\ y - 4 = t,\\ z - 1 = 0\\ (-\\\
+      infty < t < +\\infty)$$\r\nand\r\n$$x + 1 = 12t,\\ y - 7 = 6t,\\ z - 5 = 3t,\\\
+      \ (-\\infty < t < +\\infty)$$\r\nintersect and find the point of intersection."
+    section: 3
+  model: core.question
+  pk: 208
+- fields:
+    answer: "If $Ax = b$ is a system of linear equations, exactly on one of 1) The\
+      \ system\r\nhas no solutions, 2) one solution, or 3) more than one solution.\r\
+      \n\r\nThus we need to show that if there is more than one solution there are\r\
+      \ninfinitely many solutions.\r\n\r\nLet $x_1$ and $x_2$ be two such solutions\
+      \ to $Ax = b$.\r\nThen we can form $x_0 = x_1 - x_2$ where $x_0$ is not zero\
+      \ because the $x_i$\r\nare distinct. Then:\r\n$$Ax_0 = A(x_1 - x_2) = 0 - 0\
+      \ = 0$$\r\n\r\nFurther, if we let $k$ be any scalar:\r\n$$A(x_1 + kx_0) = b\
+      \ + k0 = b$$\r\n"
+    book: 1
+    book_section: '1.6'
+    category: P
+    concepts: []
+    index: 1.6.1
+    points: 2
+    question: "Prove that every linear system has either no, one or\r\ninfinitely\
+      \ many solutions."
+    section: 5
+  model: core.question
+  pk: 209
+- fields:
+    answer: "Gaussian Elimination:\r\n1. Locate the leftmost column that does not\
+      \ entirely consist of zeros.\r\n2. Interchange the top row with another row,\
+      \ if necessary, to bring a nonzero\r\nentry to the top of the column found in\
+      \ step 1.\r\n3. If the entry that is now at the top of the column found in Step\
+      \ 1 is $a$,\r\nmultiply the first row by $1/a$ in order to introduce a leading\
+      \ 1.\r\n4. Add suitable multiples of the top row to the rows below so that all\
+      \ entries\r\nbelow the leading 1 become zeros.\r\n5. Now cover the top row in\
+      \ the matrix and begin again with Step 1 applied to\r\nthe submatrix that remains.\
+      \ Continue in this way until the entire matrix is in\r\nrow-echelon form.\r\n\
+      \r\nGauss-Jordan Elimination:\r\n6. Beginning with the last nonzero row and\
+      \ working upward, add suitable\r\nmultiplies of each row to the rows above to\
+      \ introduce zeros above the leading\r\n1's.\r\n"
+    book: 1
+    book_section: '1.2'
+    category: S
+    concepts: []
+    index: ''
+    points: 3
+    question: State the Gaussian[-Jordan] Elimination procedure.
+    section: 5
+  model: core.question
+  pk: 210
+- fields:
+    answer: "A homogeneous system of linear equations with more unknowns than equations\
+      \ has\r\ninfinitely many solutions.\r\n"
+    book: 1
+    book_section: '1.2'
+    category: S
+    concepts: []
+    index: 1.2.1
+    points: 1
+    question: "State the theorem on linear systems with more unknowns than equations.\r\
+      \n"
+    section: 5
+  model: core.question
+  pk: 211
+- fields:
+    answer: "If $R$ is the reduced row-echelon form of a *square* matrix $A$, then\
+      \ either\r\n$R$ has a row of zeros or $R$ is the identity matrix.\r\n"
+    book: 1
+    book_section: '1.4'
+    category: S
+    concepts: []
+    index: 1.4.3
+    points: 1
+    question: "Characterize the reduced row-echelon form of a matrix in\r\nterms of\
+      \ zeros and ones.\r\n"
+    section: 5
+  model: core.question
+  pk: 212
+- fields:
+    answer: "Every system of linear equations has either no solutions, exactly one\
+      \ solution\r\nor infinitely many solutions.\r\n\r\n"
+    book: 1
+    book_section: '1.6'
+    category: S
+    concepts: []
+    index: 1.6.1
+    points: 1
+    question: " State the theorem on number of solutions of a linear\r\nsystem.\r\n"
+    section: 5
+  model: core.question
+  pk: 213
+- fields:
+    answer: If the $i$th row of $A$ is a row of zeros, then the $i$th row of $AB$
+      is a row of zeros. To see this recall that the $i$th row of $AB$ is a linear
+      combination of the rows $B_{j}$ the coefficients in this linear combination
+      are the entries (all zero) in the $i$th row of $A$.
+    book: 1
+    book_section: '1.3'
+    category: X
+    concepts: []
+    index: 1.3.8
+    points: 1
+    question: Show that if $A$ has a row of zeros and $B$ is any matrix for which
+      $AB$ is defined, then $AB$ also has a row of zeros
+    section: 5
+  model: core.question
+  pk: 214
+- fields:
+    answer: "To find the inverse of an invertible matrix $A$, we must find a sequence\
+      \ of\r\nelementary row operations that reduces $A$ to the identity and then\
+      \ perform\r\nthis same sequence of operations on $I_n$ to obtain $A^{-1}$.\r\
+      \n"
+    book: 1
+    book_section: '1.4'
+    category: C
+    concepts: []
+    index: '1.4'
+    points: 1
+    question: "Explain how to find the inverse of a matrix using elementary matrices.\r\
+      \n"
+    section: 6
+  model: core.question
+  pk: 215
+- fields:
+    answer: "Suppose that $B$ and $C$ are inverses of $A$. Then\r\n$$BA  = I$$\r\n\
+      $$BAC = C$$\r\n$$BI  = C$$\r\n$$B   = C$$\r\n"
+    book: 1
+    book_section: '1.4'
+    category: P
+    concepts: []
+    index: 1.4.4
+    points: 1
+    question: "Prove that inverses are unique.\r\n"
+    section: 6
+  model: core.question
+  pk: 216
+- fields:
+    answer: "$AB$ is invertible with inverse $B^{-1}A^{-1}$.\r\n"
+    book: 1
+    book_section: '1.4'
+    category: S
+    concepts: []
+    index: 1.4.6
+    points: 1
+    question: "If $A$ and $B$ are inveritble matrices of the same size, then what\
+      \ can you say\r\nabout $AB$?\r\n"
+    section: 6
+  model: core.question
+  pk: 217
+- fields:
+    answer: "By the theorem from the statement section (Anton 1.5.3) $A$ is invertible\
+      \ if\r\n$Ax = 0$ has only the trivial solution.\r\n\r\nLet $x_0$ be any solution\
+      \ of $Ax = 0$. Then\r\n$$BAx_0 = 0$$\r\n$$Ix_0 = 0$$\r\n$$x_0 = 0$$\r\n"
+    book: 1
+    book_section: '1.6'
+    category: P
+    concepts: []
+    index: 1.6.3
+    points: 2
+    question: "Prove that if $A$ and $B$ are square matrices such that\r\n$BA = I$,\
+      \ then $A$ is invertible.\r\n\r\n"
+    section: 6
+  model: core.question
+  pk: 218
+- fields:
+    answer: "$$BA = I$$\r\n$$BAA^{-1} = A^{-1}$$\r\n$$B = A^{-1}$$\r\n"
+    book: 1
+    book_section: '1.6'
+    category: P
+    concepts: []
+    index: 1.6.3
+    points: 1
+    question: "Prove that if $A$ and $B$ are square matrices such that\r\n$BA = I$,\
+      \ then not only is $A$ invertible, but $B = A^{-1}$.\r\n"
+    section: 6
+  model: core.question
+  pk: 219
+- fields:
+    answer: "If $A$ is a square matrix and if there exists a square matrix $B$ of\
+      \ the same\r\nsize such that $AB = BA = I$ then $A$ is said to be invertible\
+      \ with inverse\r\n$B$.\r\n"
+    book: 1
+    book_section: '1.4'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define when a matrix is invertible.\r\n"
+    section: 6
+  model: core.question
+  pk: 220
+- fields:
+    answer: "An $n \\times n$ matrix is called an elementary matrix if it can be obtained\r\
+      \nfrom the $n \\times n$ identity matrix $I_n$ by performing a single elementary\r\
+      \nrow operation."
+    book: 1
+    book_section: '1.5'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define an elementary matrix.\r\n"
+    section: 6
+  model: core.question
+  pk: 221
+- fields:
+    answer: "Matrices are row equivalent if they can be obtained from one another\
+      \ by a\r\nfinite sequence of elementary row operations.\r\n"
+    book: 1
+    book_section: '1.5'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define row equivalent matrices.\r\n"
+    section: 6
+  model: core.question
+  pk: 222
+- fields:
+    answer: "$$E_1 = \\begin{pmatrix} 0 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 0 \\end{pmatrix}$$\r\
+      \n$$E_2 = \\begin{pmatrix} 0 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 0 \\end{pmatrix}$$\r\
+      \n"
+    book: 1
+    book_section: '1.5'
+    category: X
+    concepts: []
+    index: 1.5.3a
+    points: 2
+    question: "Find an elementary matrices $E_1$ and $E_2$ such that $E_1A = B$\r\n\
+      and $E_2B = A$ where\r\n$$A = \\begin{pmatrix} 3 & 4 & 1 \\\\ 2 & -7 & -1 \\\
+      \\ 8 & 1 & 4 \\end{pmatrix}$$\r\n$$B = \\begin{pmatrix} 8 & 1 & 4 \\\\ 2 & -7\
+      \ & -1 \\\\ 3 & 4 & 1 \\end{pmatrix}$$\r\n"
+    section: 6
+  model: core.question
+  pk: 223
+- fields:
+    answer: "$$A = \\begin{pmatrix}\r\n    1/5 & 1/5 & -2/5&   1 & 0 & 0 \\\\\r\n\
+      \    1/5 & 1/5 & 1/10&   0 & 1 & 0 \\\\\r\n    1/5 & -4/5 & 1/10&  0 & 0 & 1\r\
+      \n    \\end{pmatrix}$$\r\n$$\\begin{pmatrix}\r\n    1 & 1  & -2&         5 &\
+      \ 0 & 0 \\\\\r\n    0 & 0  & 1/2&        -1 & 1 & 0 \\\\\r\n    0 & -1 & 1/2&\
+      \       -1 & 0 & 1\r\n    \\end{pmatrix}$$\r\n$$\\begin{pmatrix}\r\n    1 &\
+      \ 1  & -2&         5 & 0 & 0 \\\\\r\n    0 & 1 & -1/2&        1 & 0 & -1 \\\\\
+      \r\n    0 & 0 & 1&          -2 & 2 & 0\r\n    \\end{pmatrix}$$\r\n$$\\begin{pmatrix}\r\
+      \n    1 & 1 & 0&         1 & 4 & 0 \\\\\r\n    0 & 1 & 0&         0 & 1 & -1\
+      \ \\\\\r\n    0 & 0 & 1&         -2 & 2 & 0\r\n    \\end{pmatrix}$$\r\n$$\\\
+      begin{pmatrix}\r\n    1 & 0 & 0&         1 & 3 & 1 \\\\\r\n    0 & 1 & 0&  \
+      \       0 & 1 & -1 \\\\\r\n    0 & 0 & 1&         -2 & 2 & 0\r\n    \\end{pmatrix}$$\r\
+      \n$$A^{-1} =\\begin{pmatrix}\r\n1 & 3 & 1 \\\\\r\n0 & 1 & -1 \\\\\r\n-2 & 2\
+      \ & 0\r\n\\end{pmatrix}$$\r\n"
+    book: 1
+    book_section: '1.5'
+    category: X
+    concepts: []
+    index: 1.5.7a
+    points: 4
+    question: " Use the technique of elementary matrices to find an inverse to\r\n\
+      $$A = \\begin{pmatrix} 1/5 & 1/5 & -2/5 \\\\ 1/5 & 1/5 & 1/10 \\\\ 1/5 & -4/5\
+      \ & 1/10\r\n\\end{pmatrix}$$\r\n"
+    section: 6
+  model: core.question
+  pk: 224
+- fields:
+    answer: "The matrix is not invertible.\r\n"
+    book: 1
+    book_section: '1.5'
+    category: X
+    concepts: []
+    index: 1.5.7d
+    points: 2
+    question: "Use the technique of elementary matrices to find an inverse to\r\n\
+      $$A = \\begin{pmatrix} -8 & 17 & 2 & 1/3 \\\\ 4 & 0 & 2/5 & -9 \\\\ 0&0&0&0\
+      \ \\\\ -1 &\r\n13 & 4 & 2\r\n\\end{pmatrix}$$\r\n"
+    section: 6
+  model: core.question
+  pk: 225
+- fields:
+    answer: "$$A(3I - A) = 3A - A^2 = I$$\r\n"
+    book: 1
+    book_section: '1.4'
+    category: X
+    concepts: []
+    index: 1.4.14
+    points: 1
+    question: " Show that if a square matrix $A$ satisfies $A^2-3A+I=0$\r\nthen $A^{-1}=3I-A$.\r\
+      \n"
+    section: 6
+  model: core.question
+  pk: 226
+- fields:
+    answer: "Because $A0$ and $0A$ may not have the same size.\r\n"
+    book: 1
+    book_section: '1.4'
+    category: X
+    concepts: []
+    index: 1.4.18
+    points: 1
+    question: "In summarizing properties of matrix arithmetic why is it\r\nnot appropriate\
+      \ to write $A0 = 0 = 0A$?\r\n"
+    section: 6
+  model: core.question
+  pk: 227
+- fields:
+    answer: "If $E$ is an elementary matrix, then $E$ results from performing some\
+      \ row\r\noperation on $I$. Let $E_0$ be the matrix that results when the inverse\
+      \ of this\r\noperation is performed on $I$. Then $E_0E = I$ and $EE_0 = I$.\r\
+      \n"
+    book: 1
+    book_section: '1.5'
+    category: P
+    concepts: []
+    index: 1.5.2
+    points: 2
+    question: "Prove that elementary matrix is invertible and the inverse is also\
+      \ an\r\nelementary matrix.\r\n"
+    section: 6
+  model: core.question
+  pk: 228
+- fields:
+    answer: "1) => 2)\r\n    Assume $x$ is a solution of $Ax = 0$. Then $x = Ix =\
+      \ ^{-1}Ax = 0$\r\n\r\n2) => 3)\r\n    If we solve the related linear system\
+      \ of equations for $A$ by Gauss-Jordan\r\n    elminination, then the system\
+      \ of equations corresponding to the reduced\r\n    row-echelon form of the augmented\
+      \ matrix will be\r\n    $x_i = 0$ since the system has only the trivial solution.\
+      \ Thus the reduced\r\n    row-echelon form is $I_n$.\r\n\r\n3) => 4)\r\n   \
+      \ There exists $E_i$ such that $E_k \\cdots E_2E_1A = I_n$.\r\n\r\n4) => 1)\r\
+      \n    If $A$ is the product of elementary matrices, then since the product of\r\
+      \n    invertible matrices is invertible and since elementary matrices are\r\n\
+      \    invertible $A$ is invertible.\r\n"
+    book: 1
+    book_section: '1.5'
+    category: P
+    concepts: []
+    index: 1.5.3
+    points: 5
+    question: "Prove that TFAE on a $n \\times n$ matrix $A$:\r\n<ol type=\"1\">\r\
+      \n<li> $A$ is invertible.\r\n<li> $Ax = 0$ has only the trivial solution.\r\n\
+      <li> The reduced row-echelon form of $A$ is $I_n$.\r\n<li> $A$ is expressible\
+      \ as a product of elementary matrices.\r\n</ol>"
+    section: 6
+  model: core.question
+  pk: 229
+- fields:
+    answer: "<ol type=\"1\">\r\n<li> $Ax = 0$ has only the trivial solution.\r\n<li>\
+      \ The reduced row-echelon form of $A$ is $I_n$.\r\n<li> $A$ is expressible as\
+      \ a product of elementary matrices.\r\n<li> $Ax = b$ is consistent for every\
+      \ $n \\times 1$ matrix $b$.\r\n<li> $Ax = b$ has exactly one solution for every\
+      \ $n \\times 1$ matrix $b$\r\n</ol>"
+    book: 1
+    book_section: '1.6'
+    category: S
+    concepts: []
+    index: 1.6.4
+    points: 2
+    question: " State 5 equivalent conditions for a $n \\times n$\r\nmatrix $A$ to\
+      \ be invertible."
+    section: 6
+  model: core.question
+  pk: 230
+- fields:
+    answer: "A diagonal matrix is invertible iff all of its diagonal entries are nonzero,\
+      \ in\r\nwhich case its inverse is the diagonal matrix with entries reciprocal\
+      \ of the\r\noriginal matrix.\r\n\r\nFurther, power of diagonal matrices are\
+      \ easy to compute, as you just raise the\r\ndiagonal entries to the power.\r\
+      \n"
+    book: 1
+    book_section: '1.7'
+    category: C
+    concepts: []
+    index: '1.7'
+    points: 2
+    question: "Explain why diagonal matrices are easy to work with.\r\n"
+    section: 9
+  model: core.question
+  pk: 231
+- fields:
+    answer: "The $n \\times m$ matrix that results from interchanging the rows and\
+      \ columns of\r\n$A$.\r\n"
+    book: 1
+    book_section: '1.3'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the transpose of a $m \\times n$ matrix $A$.\r\n"
+    section: 9
+  model: core.question
+  pk: 232
+- fields:
+    answer: "First the matrix *must* be square.\r\n\r\nThen, if it is square, the\
+      \ trace is the sum of the elements on the diagonal.\r\n"
+    book: 1
+    book_section: '1.3'
+    category: D
+    concepts: []
+    index: ''
+    points: 1
+    question: "Define the trace of a matrix.\r\n"
+    section: 9
+  model: core.question
+  pk: 233
+- fields:
+    answer: "$$\\tr(AA^T) = \\sum_{i=1}^m \\mbox{ the entry in rows $i$ and column\
+      \ $i$ of\r\n$AA^T$}$$\r\n$$ = \\sum_{i = 1}^m (\\sum_{k = 1}^n (a_{ik})^2)$$\r\
+      \n$$ = \\mbox{ the sum of the squares of the entries of $A$ }$$\r\n\r\nThen:\r\
+      \n$$AA^T = 0 \\implies tr(AA^T) = 0$$\r\n$$\\implies \\mbox{the sum of squares\
+      \ of the entries of $A$ is zero}$$\r\n$$\\implies \\mbox{every entry of $A$\
+      \ is zero}$$\r\n$$A = 0$$\r\n"
+    book: 1
+    book_section: '1.3'
+    category: X
+    concepts: []
+    index: 1.3.23 & 24
+    points: 4
+    question: " Prove that if $A$ is an $m \\times n$ matrix, then\r\n$$\\tr(AA^T)\
+      \ = s$$\r\nwhere $s$ is the sum of the squares of the entries of $A$. Then use\
+      \ this result\r\nto prove that if $A$ is an $m \\times n$ matrix such that $AA^T\
+      \ = 0$ or $A^TA = 0\r\n$ then $A = 0$.\r\n"
+    section: 9
+  model: core.question
+  pk: 234
+- fields:
+    answer: "Let $A = (a_{ij})$ and $B = (b_{ij})$. Then\r\n$$((AB)^T)_{ij} = (AB)_{ji}\
+      \ = \\sum_{k = 0}^n a_{jk}b_{kj}$$\r\n$$ = \\sum_{k=0}^n (B^T)_{jk}(A^T)_{kj}\
+      \ = B^TA^T$$"
+    book: 1
+    book_section: ''
+    category: P
+    concepts: []
+    index: ''
+    points: 2
+    question: "Prove that $(AB)^T = B^TA^T$\r\n\r\n"
+    section: 9
+  model: core.question
+  pk: 235
+- fields:
+    answer: "From the previous part,\r\n$$A^T(A^{-1})^T = (A^{-1}A)^T = I^T = I$$\r\
+      \nand similarly we can show\r\n$$(A^{-1})^TA^T = (AA^{-1})^T = I^T = I$$\r\n\
+      \r\nThus $A^T$ has an inverse.\r\n"
+    book: 1
+    book_section: ''
+    category: P
+    concepts: []
+    index: ''
+    points: 1
+    question: "Prove that if $A$ is invertible, $(A^T)^{-1} = (A^{-1})^T$.\r\n"
+    section: 9
+  model: core.question
+  pk: 236
+- fields:
+    answer: "$$(A^{-1})^T = (A^T)^{-1} = A^{-1}$$\r\n"
+    book: 1
+    book_section: '1.7'
+    category: P
+    concepts: []
+    index: ''
+    points: 1
+    question: Prove that if $A$ is an invertible symmetric matrix then $A^{-1}$ is
+      symmetric.
+    section: 9
+  model: core.question
+  pk: 237
+- fields:
+    answer: "1) $(A^T)^T = A$\r\n2) $(A + B)^T = A^T + B^T$\r\n3) $(kA)^T = kA^T$\r\
+      \n4) $(AB)^T = B^TA^T$\r\n\r\n"
+    book: 1
+    book_section: '1.4'
+    category: S
+    concepts: []
+    index: ''
+    points: 2
+    question: State the basic properties of transpose.
+    section: 9
+  model: core.question
+  pk: 238
+- fields:
+    answer: "If $A$ is an invertible matrix, then $A^T$ is also invertible and\r\n\
+      $$(A^T)^{-1} = (A^{-1})^T$$\r\n"
+    book: 1
+    book_section: '1.4'
+    category: S
+    concepts: []
+    index: 1.4.10
+    points: 1
+    question: ' State the theorem relating transposes and inverses.'
+    section: 9
+  model: core.question
+  pk: 239
+- fields:
+    answer: "1) The transpose of a lower [upper] triangular matrix is upper [lower]\r\
+      \ntriangular.\r\n2) The product of lower [upper] triangular matrices is lower\
+      \ [upper]\r\ntriangular.\r\n3) A triangular matrix is invertible iff its diagonal\
+      \ entries are all nonzero.\r\n4) The inverse of an invertible lower [upper]\
+      \ triangular matrix is lower\r\n[upper] triangular matrix.\r\n"
+    book: 1
+    book_section: '1.7'
+    category: S
+    concepts: []
+    index: 1.7.1
+    points: 3
+    question: State the basic properties of triangular matrices
+    section: 9
+  model: core.question
+  pk: 240
+- fields:
+    answer: "If $A$ and $B$ are symmetric matrices of the same size:\r\n1) $A^T$ is\
+      \ symmetric\r\n2) $A + B$ and $A - B$ is symmetric.\r\n3) $kA$ is symmetric\r\
+      \n4) If $A$ is invertible, then $A^{-1}$ is symmetric.\r\n\r\n"
+    book: 1
+    book_section: '1.7'
+    category: S
+    concepts: []
+    index: 1.7.2
+    points: 3
+    question: " List 4 properties of symmetric matrices.\r\n"
+    section: 9
+  model: core.question
+  pk: 241
+- fields:
+    answer: "<ol type=\"a\">\r\n<li> An inversion is said to occur in a permutation\
+      \ $(j_1, j_2, \\ldots, j_n)$ whenever\r\na larger integer precedes a smaller\
+      \ one.\r\n<li> A permutation is even or odd as the total number of inversions\
+      \ is even or odd.\r\n<li>An elementary product from a square n \\times n matrix\
+      \ is any product of $n$\r\nentries no two of which come from the same row or\
+      \ same column.A signed elementary product from A is an elementary product\r\n\
+      $a_{1j_1}a_{2j_2}\\cdots a_{nj_n}$ multiplied by +1 if the permutation\r\n(j_1j_2\\\
+      cdotsj_n) is even and by -1 if it is odd.\r\n<li> The determinant function is\
+      \ det(A) = sum of all signed elementary products\r\nof $A$. It is a function\
+      \ from the set of all square matrices to the reals.\r\n</ol>"
+    book: 1
+    book_section: '2.1'
+    category: D
+    concepts: []
+    index: ''
+    points: 3
+    question: "Define the following:\r\n<ol type=\"a\">\r\n<li> Inversion of a permutation\r\
+      \n<li> even [odd] permutation\r\n<li> [signed] Elementary product\r\n<li> Determinant\
+      \ function\r\n</ol>"
+    section: 10
+  model: core.question
+  pk: 242
+- fields:
+    answer: "<ol type=\"a\">\r\n<li> inversion number is 8, so even\r\n<li> inversion\
+      \ number is 3, so odd.\r\n<li> inversion number is 0, so even.\r\n</ol>"
+    book: 1
+    book_section: '2.1'
+    category: E
+    concepts: []
+    index: ''
+    points: 2
+    question: " Determine the number of inversions in the following\r\npermutations.\
+      \ Which are even or odd?\r\n<ol type=\"a\">\r\n<li> (6, 1, 3, 4, 5, 2)\r\n<li>\
+      \ (2, 4, 1, 3)\r\n<li> (1, 2, 3, 4)\r\n</ol>\r\n"
+    section: 10
+  model: core.question
+  pk: 243
+- fields:
+    answer: "<ol type=\"a\">\r\n<li> $ (-1)^inv(54321) a_15a_24a_33a_42a_51 = (-1)^{10}\
+      \ (-3)(-4)(-1)(2)(5) = -120$\r\n<li> $= (-1)^inv(15432) a_11a_25a_34a_43a_52\
+      \ = (-1)^{5} (5)(-4)(3)(1)(-2) = -120$\r\n</ol> "
+    book: 1
+    book_section: '2.1'
+    category: X
+    concepts: []
+    index: 2.1.17
+    points: 3
+    question: " Use the determinant definition to evaluate:\r\n<ol type=\"a\">\r\n\
+      <li>$\\begin{vmatrix} 0 & 0 & 0 & 0 & -3 \\\\ 0 & 0 & 0 & -4 & 0 \\\\ 0 & 0\
+      \ & -1 & 0 & 0 \\\\ 0 & 2 & 0 & 0 & 0 \\\\ 5 & 0 & 0 & 0 & 0\\\\ \\end{vmatrix}$\r\
+      \n<li>$\\begin{vmatrix} 5 & 0 & 0 & 0 & 0  \\\\ 0 & 0 & 0 & 0 & -4 \\\\ 0 &\
+      \ 0 & 3 & 0 & 0 \\\\ 0 & 0 & 0 & 1 & 0 \\\\ 0 & -2 & 0 & 0 & 0\\\\ \\end{vmatrix}$\r\
+      \n</ol>"
+    section: 10
+  model: core.question
+  pk: 244
+- fields:
+    answer: "If a row of a matrix is zero, then each term will have one element of\
+      \ that row\r\nwhich will be zero, thus each signed elementary product has a\
+      \ zero.\r\n\r\nThe argument for columns is similar.\r\n"
+    book: 1
+    book_section: '2.1'
+    category: X
+    concepts: []
+    index: 2.1.20
+    points: 2
+    question: " Prove that if a square matrix $A$ has a row or column of\r\nzeros,\
+      \ then det(A) = 0.\r\n"
+    section: 10
+  model: core.question
+  pk: 245
+- fields:
+    answer: "<ol type=\"a\">\r\n<li> $\\det(A) = \\det(A^T)$\r\n<li> The determinant\
+      \ of an upper triangular, lower triangular or diagonal matrix is the product\
+      \ of entries on the main diagonal.\r\n<li> Let $A$ be an $n \\times n$ matrix:\r\
+      \n<ol type=\"i\">\r\n<li> If $B$ is the matrix that results when a single row\
+      \ or single column of $A$\r\nis multiplied by a scalar $k$, then $\\det(B) =\
+      \ k \\det(A)$.\r\n<li> If $B$ is the matrix that results when two rows or columns\
+      \ of $A$ are\r\ninterchange, then $\\det(B) = - \\det(A)$.\r\n<li> If $B$ is\
+      \ the matrix that results when a multiple of one row of $A$ is added\r\nto another\
+      \ row or when a multiple of one column is added to another column then\r\n$\\\
+      det(B) = \\det(A)$.\r\n</ol>\r\n<li> If $A$ is a square matrix with two proportional\
+      \ rows or two proportional\r\ncolumns, then $\\det(A) = 0$.\r\n</ol>\r\n\r\n"
+    book: 1
+    book_section: '2.2'
+    category: S
+    concepts: []
+    index: Thm 2.2.1-5
+    points: 6
+    question: "State the following properties about determinants:\r\n<ol type=\"a\"\
+      >\r\n<li> What is the determinant of a transpose?\r\n<li> What is the determinant\
+      \ of a triangular matrix?\r\n<li> What is the effect of elementary row operations\
+      \ on the determinant function?\r\n<li> What happens to the determinant function\
+      \ if a matrix has proportional rows or columns?\r\n</ol>"
+    section: 11
+  model: core.question
+  pk: 246
+- fields:
+    answer: "<ol type=\"a>\r\n<li> -6\r\n<li> 72\r\n<li> -6\r\n<li> 18\r\n</ol>"
+    book: 1
+    book_section: '2.2'
+    category: X
+    concepts: []
+    index: 2.2.12
+    points: 3
+    question: "Given that $\\begin{vmatrix} a & b & c \\\\ d & e & f \\\\ g & h &\
+      \ i \\\\ \\end{vmatrix} = -6$ find\r\n<ol type=\"a\">\r\n<li> $\\begin{vmatrix}\
+      \ d & e & f \\\\  g & h & i \\\\ a & b & c \\\\ \\end{vmatrix}$\r\n<li> $\\\
+      begin{vmatrix} 3a & 3b & 3c \\\\ -d & -e & -f \\\\ 4g & 4h & 4i \\\\ \\end{vmatrix}$\r\
+      \n<li>$\\begin{vmatrix} a+g & b+h & c+i \\\\ d & e & f \\\\ g & h & i \\\\ \\\
+      end{vmatrix}$\r\n<li> $\\begin{vmatrix} -3a & -3b & -3c \\\\ d & e & f \\\\\
+      \ g -4d & h -4e & i -4f \\\\ \\end{vmatrix}$\r\n</ol>"
+    section: 11
+  model: core.question
+  pk: 248
+- fields:
+    answer: "<ol type=\"a\">\r\n<li> If $A$ is a square matrix then a characteristic\
+      \ value $\\lambda$ of $A$ is a\r\none such that $\\lambdaI - A$ has a nontrivial\
+      \ solution.\r\n<li> If $A$ is a square matrix then an eigenvector is a nontrivial\
+      \ solution of $\\lambdaI - A$.\r\n<li>If $A$ is a square matrix then note that\
+      \ the characteristic values are the ones\r\nwhich $\\det(\\lambdaI - A) = 0$.\
+      \ This determinant is a polynomial in $\\lambda$,\r\nthe characteristic equation.\r\
+      \n</ol>"
+    book: 1
+    book_section: '2.3'
+    category: D
+    concepts: []
+    index: ''
+    points: 3
+    question: "Define the following terms:\r\n<ol type=\"a\">\r\n<li> characteristic\
+      \ value of a matrix $A$.\r\n<li> The eigenvector of a matrix $A$.\r\n<li> The\
+      \ characteristic equation of a matrix $A$.\r\n</ol>"
+    section: 12
+  model: core.question
+  pk: 249
+- fields:
+    answer: "<ol type=\"a\">\r\n<li>Let A, B and C be n \\times n matrices that differ\
+      \ only in a single row and\r\nassume that C can be obtained by adding the entries\
+      \ in this row of A and B.\r\nThen:\r\n    $$\\det(C) = \\det(A) + \\det(B)$.\r\
+      \n\r\nThe same result holds for columns.\r\n<li>A square matrix $A$ is invertible\
+      \ iff $\\det(A) \\ne 0$.\r\n<li>$$\\det(AB) = \\det(A)\\det(B)$$\r\n</ol>"
+    book: 1
+    book_section: '2.3'
+    category: S
+    concepts: []
+    index: Thm 2.3.1-5
+    points: 6
+    question: "State the following\r\n<ol type=\"a\">\r\n<li>State the properties\
+      \ that characterize the determinant as a function/\r\n<li> Explain the relationship\
+      \ between determinants and invertibility.\r\n<li> State the relationship between\
+      \ det and matrix multiplication\r\n</ol>"
+    section: 12
+  model: core.question
+  pk: 250
+- fields:
+    answer: "<ol type=\"a\">\r\n<li> $A$ is invertible\r\n<li> $Ax = 0$ has only the\
+      \ trivial solution\r\n<li> The reduced row-echelon form of $A$ is $I_n$.\r\n\
+      <li> $A$ is expressible as a product of elementary matrices.\r\n<li> $Ax =b$\
+      \ is consistent for every $n \\times 1$ matrix $b$.\r\n<li> $Ax =b$ has exactly\
+      \ one solution for every $n \\times 1$ matrix $b$.\r\n<li> $\\det(A) \\ne 0$\r\
+      \n</ol>"
+    book: 1
+    book_section: '2.3'
+    category: S
+    concepts: []
+    index: Thm 2.3.6
+    points: 3
+    question: State 6 equivalent conditions to a square matrix being invertible using  only
+      linear systems, matrix arithmetic and determinants.
+    section: 12
+  model: core.question
+  pk: 251
+- fields:
+    answer: "Do thi
