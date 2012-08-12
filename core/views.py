@@ -27,8 +27,7 @@ def index(request):
 def test_view(request, course_id):
     c = django.shortcuts.get_object_or_404(core.models.Course,
                                            pk=course_id)
-    l = django.shortcuts.get_list_or_404(core.models.Section,
-                                           course=course_id)
+    l = core.models.Section.objects.filter(course=course_id).order_by('number')
     questions = []
     for lecture in l:
         questions += lecture.question_set.all()
