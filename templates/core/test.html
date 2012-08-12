@@ -8,23 +8,32 @@ MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
 </script>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 <title>{{ course.full_name }} Exam</title>
 </head>
+<body>
 <h3>{{ course.full_name }} Exam</h3>
 <p>This exam has {{ points }} points.</p>
-{% for question in questions %}
-{{ forloop.counter }}. [<b>{{ question.points }}</b>]
-{% autoescape off %}
-{{ question.question }} <br>
-{% endautoescape %}
+{% for lecture in lectures %}
+<div data-role="collapsible">
+  <h3>{{ lecture.title }}</h3>
+  {% for question in lecture.question_set.all %}
+  {{ forloop.counter }}. [<b>{{ question.points }}</b>]
+  {% autoescape off %}
+  {{ question.question }} <br>
+  {% endautoescape %}
+  {% endfor %}
+</div>
 {% endfor %}
-<body>
+
 <h1></h1>
 
 
 
 <hr>
 <address></address>
-<!-- hhmts start -->Last modified: Sun Jul 15 14:51:00 EDT 2012 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Sun Aug 12 17:36:07 EDT 2012 <!-- hhmts end -->
 </body> </html>
