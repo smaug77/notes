@@ -165,5 +165,5 @@ def new_question(request, course_id, section_id):
         logger.exception("Failed to create a new question:")
 
     django.http.HttpResponseRedirect(
-            django.core.urlresolvers.reverse('core.views.question_edi',
+            django.core.urlresolvers.reverse('core.views.question_edit',
                                              args=(course_id, section_id,)))
