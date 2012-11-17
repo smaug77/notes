@@ -94,7 +94,10 @@ def question_edit(request, course_id, section_id):
     cpts = s.concept_set.all()
     print s
     print s.question_set.all()
-    points_budget = 20
+    l = core.models.Section.objects.filter(course=course_id).order_by('number')
+    questions = []
+    sections = len(l)
+    points_budget = sections
     points_total = sum([x.points for x in s.question_set.all()])
     points_exer = sum([x.points for x in s.question_set.all() if x.category=='X'])
     points_other = sum([x.points for x in s.question_set.all() if x.category!='X'])
