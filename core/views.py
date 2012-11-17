@@ -97,11 +97,11 @@ def question_edit(request, course_id, section_id):
     l = core.models.Section.objects.filter(course=course_id).order_by('number')
     # what type of course is it?
     lecture = l[0]
-    if (l.category == 'L'):
+    if (lecture.category == 'L'):
        course_total = 1050
-    elif (l.category == 'W'):
+    elif (lecture.category == 'W'):
        course_total = 525
-    elif (l.category == 'U'):
+    elif (lecture.category == 'U'):
        course_total = 180
     sections = len(l)
     points_budget = int(course_total/sections)
