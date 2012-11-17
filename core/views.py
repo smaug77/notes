@@ -95,9 +95,16 @@ def question_edit(request, course_id, section_id):
     print s
     print s.question_set.all()
     l = core.models.Section.objects.filter(course=course_id).order_by('number')
-    questions = []
+    # what type of course is it?
+    lecture = l[0]
+    if (l.category == 'L'):
+       course_total = 1050
+    elif (l.category == 'W'):
+       course_total = 525
+    elif (l.category == 'U'):
+       course_total = 180
     sections = len(l)
-    points_budget = sections
+    points_budget = int(course_total/sections)
     points_total = sum([x.points for x in s.question_set.all()])
     points_exer = sum([x.points for x in s.question_set.all() if x.category=='X'])
     points_other = sum([x.points for x in s.question_set.all() if x.category!='X'])
