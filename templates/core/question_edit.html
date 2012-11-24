@@ -47,12 +47,7 @@ Enter your question here</textarea>
       <input type="text" name="index" value="" />      
     </td>
   </tr>
-  <tr><td>
-    <div align="right"><br>
-    {% for concept in concepts %}
-    <input type="checkbox" name="concept" value={{ concept.pk }}> {{concept.name }} 
-    {% endfor %}
-    </td>
+  <tr>
     {% if book_list %}
     <td>
       <label for="book"><b>Book Source</b></label>
@@ -66,6 +61,14 @@ Enter your question here</textarea>
     <td>
       <label for="book_section"><b>Book Section</b></label>
       <input type="text" name="book_section" value="" />      
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <div align="right"><br>
+    {% for concept in concepts %}
+    <input type="checkbox" name="concept" value={{ concept.pk }}> {{concept.name }} 
+    {% endfor %}
     </td>
   </tr>
 </table>
